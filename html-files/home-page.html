@@ -1,11 +1,693 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css-files/home-page.css" />
+    <title>Home page</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="../icons/logo-icon.svg" alt="StreamVibe" />
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="list-item">
+            <a href="../html-files/home-page.html">Home</a>
+          </li>
+          <li class="list-item">
+            <a href="../html-files/movies-shows-page.html">Movies&Shows</a>
+          </li>
+          <li class="list-item">
+            <a href="../html-files/support-page.html">Support</a>
+          </li>
+          <li class="list-item">
+            <a href="../html-files/subscription-page.html">Subscriptions</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="search&notification">
+        <form
+          class="search-form"
+          action="../html-files/search-page.html"
+          method="get"
+        >
+          <input
+            class="search-input"
+            type="text"
+            placeholder="Search for movies, shows, and more..."
+            name="search"
+          />
+          <button class="search-button" type="submit">
+            <img alt="icon-search" src="../icons/icon-search.svg" />
+          </button>
+        </form>
+        <button class="notification-button" type="submit">
+          <img alt="icon-notification" src="../icons/icon-notification.svg" />
+        </button>
+      </div>
+      <div id="searchResults" class="results">
+        <h2>Результати пошуку</h2>
+        <p>Тут будуть відображатися результати...</p>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="film-intro-section">
+        <div class="suggestion-films">
+          <figure class="film-card-row-1">
+            <img class="film-image" src="../icons/Image.svg" alt="Film 1" />
+            <figcaption class="film-title">Film Title 1</figcaption>
+            <img class="film-image" src="../icons/Image-1.svg" alt="Film 2" />
+            <figcaption class="film-title">Film Title 2</figcaption>
+            <img class="film-image" src="../icons/Image-2.svg" alt="Film 3" />
+            <figcaption class="film-title">Film Title 3</figcaption>
+            <img class="film-image" src="../icons/Image-3.svg" alt="Film 4" />
+            <figcaption class="film-title">Film Title 4</figcaption>
+            <img class="film-image" src="../icons/Image-4.svg" alt="Film 5" />
+            <figcaption class="film-title">Film Title 5</figcaption>
+            <img class="film-image" src="../icons/Image-5.svg" alt="Film 6" />
+            <figcaption class="film-title">Film Title 6</figcaption>
+            <img class="film-image" src="../icons/Image-6.svg" alt="Film 7" />
+            <figcaption class="film-title">Film Title 7</figcaption>
+            <img class="film-image" src="../icons/Image-7.svg" alt="Film 8" />
+            <figcaption class="film-title">Film Title 8</figcaption>
+            <img class="film-image" src="../icons/Image-8.svg" alt="Film 9" />
+            <figcaption class="film-title">Film Title 9</figcaption>
+          </figure>
+          <figure class="film-card-row-2">
+            <img class="film-image" src="../icons/Image-9.svg" alt="Film 10" />
+            <figcaption class="film-title">Film Title 10</figcaption>
+            <img class="film-image" src="../icons/Image-10.svg" alt="Film 11" />
+            <figcaption class="film-title">Film Title 11</figcaption>
+            <img class="film-image" src="../icons/Image-11.svg" alt="Film 12" />
+            <figcaption class="film-title">Film Title 12</figcaption>
+            <img class="film-image" src="../icons/Image-12.svg" alt="Film 13" />
+            <figcaption class="film-title">Film Title 13</figcaption>
+            <img class="film-image" src="../icons/Image-13.svg" alt="Film 14" />
+            <figcaption class="film-title">Film Title 14</figcaption>
+            <img class="film-image" src="../icons/Image-14.svg" alt="Film 15" />
+            <figcaption class="film-title">Film Title 15</figcaption>
+            <img class="film-image" src="../icons/Image-15.svg" alt="Film 16" />
+            <figcaption class="film-title">Film Title 16</figcaption>
+            <img class="film-image" src="../icons/Image-16.svg" alt="Film 17" />
+            <figcaption class="film-title">Film Title 17</figcaption>
+            <img class="film-image" src="../icons/Image-17.svg" alt="Film 18" />
+            <figcaption class="film-title">Film Title 18</figcaption>
+          </figure>
+          <figure class="film-card-row-3">
+            <img class="film-image" src="../icons/Image-18.svg" alt="Film 19" />
+            <figcaption class="film-title">Film Title 19</figcaption>
+            <img class="film-image" src="../icons/Image-19.svg" alt="Film 20" />
+            <figcaption class="film-title">Film Title 20</figcaption>
+            <img class="film-image" src="../icons/Image-20.svg" alt="Film 21" />
+            <figcaption class="film-title">Film Title 21</figcaption>
+            <img class="film-image" src="../icons/Image-21.svg" alt="Film 22" />
+            <figcaption class="film-title">Film Title 22</figcaption>
+            <img class="film-image" src="../icons/Image-22.svg" alt="Film 23" />
+            <figcaption class="film-title">Film Title 23</figcaption>
+            <img class="film-image" src="../icons/Image-23.svg" alt="Film 24" />
+            <figcaption class="film-title">Film Title 24</figcaption>
+            <img class="film-image" src="../icons/Image-24.svg" alt="Film 25" />
+            <figcaption class="film-title">Film Title 25</figcaption>
+            <img class="film-image" src="../icons/Image-25.svg" alt="Film 26" />
+            <figcaption class="film-title">Film Title 26</figcaption>
+            <img class="film-image" src="../icons/Image-26.svg" alt="Film 27" />
+            <figcaption class="film-title">Film Title 27</figcaption>
+          </figure>
+          <figure class="film-card-row-4">
+            <img class="film-image" src="../icons/Image-27.svg" alt="Film 28" />
+            <figcaption class="film-title">Film Title 28</figcaption>
+            <img class="film-image" src="../icons/Image-28.svg" alt="Film 29" />
+            <figcaption class="film-title">Film Title 29</figcaption>
+            <img class="film-image" src="../icons/Image-29.svg" alt="Film 30" />
+            <figcaption class="film-title">Film Title 30</figcaption>
+            <img class="film-image" src="../icons/Image-30.svg" alt="Film 31" />
+            <figcaption class="film-title">Film Title 31</figcaption>
+            <img class="film-image" src="../icons/Image-31.svg" alt="Film 32" />
+            <figcaption class="film-title">Film Title 32</figcaption>
+            <img class="film-image" src="../icons/Image-32.svg" alt="Film 33" />
+            <figcaption class="film-title">Film Title 33</figcaption>
+            <img class="film-image" src="../icons/Image-33.svg" alt="Film 34" />
+            <figcaption class="film-title">Film Title 34</figcaption>
+            <img class="film-image" src="../icons/Image-34.svg" alt="Film 35" />
+            <figcaption class="film-title">Film Title 35</figcaption>
+            <img class="film-image" src="../icons/Image-35.svg" alt="Film 36" />
+            <figcaption class="film-title">Film Title 36</figcaption>
+          </figure>
+          <div class="abstract-design-container">
+            <img
+              class="film-image"
+              src="../icons/abstract-design-icon.svg"
+              alt="abstract-design-icon"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="streaming-promo">
+        <div class="sub-container">
+          <article class="streaming-promo__content">
+            <h1 class="streaming-promo__heading">
+              The Best Streaming Experience
+            </h1>
+            <p class="streaming-promo__description">
+              StreamVibe is the best streaming experience for watching your
+              favorite movies and shows on demand, anytime, anywhere. With
+              StreamVibe, you can enjoy a wide variety of content, including the
+              latest blockbusters, classic movies, popular TV shows, and more.
+              You can also create your own watchlists, so you can easily find
+              the content you want to watch.
+            </p>
+          </article>
+          <button class="streaming-promo__button" type="button">
+            <img
+              class="streaming-promo__button-icon"
+              src="../icons/icon-play.svg"
+              alt="icon-play"
+            />
+            <span class="streaming-promo__button-text">Start Watching Now</span>
+          </button>
+        </div>
+      </section>
+      <section class="categories-section">
+        <div class="sub-container">
+          <div class="text-container">
+            <article class="categories-article">
+              <h2 id="categories-heading" class="categories-heading">
+                Explore our wide variety of categories
+              </h2>
+              <div class="paragraph">
+                Whether you're looking for a comedy to make you laugh, a drama
+                to make you think, or a documentary to learn something new
+              </div>
+            </article>
+          </div>
+          <div class="buttons-container">
+            <nav class="categories-nav">
+              <img
+                class="button-icon"
+                alt="icon-previous"
+                src="../icons/icon-previous.svg"
+              />
+              <div class="indicators-container">
+                <div class="shape"></div>
+                <div class="shape1"></div>
+                <div class="shape1"></div>
+                <div class="shape1"></div>
+              </div>
+              <img
+                class="button-icon"
+                alt="icon-next"
+                src="../icons/icon-next.svg"
+              />
+            </nav>
+          </div>
+        </div>
+        <div class="sub-container">
+          <article class="category-card">
+            <div class="category-card__image-container">
+              <figure class="category-card__image-row1">
+                <img
+                  class="category-card__image"
+                  src="../icons/icon1-container1.svg"
+                  alt="Category 1"
+                />
+                <figcaption class="category-card__title">Category 1</figcaption>
+                <img
+                  class="category-card__image"
+                  src="../icons/icon2-container1.svg"
+                  alt="Category 2"
+                />
+                <figcaption class="category-card__title">Category 2</figcaption>
+              </figure>
+              <figure class="category-card__image-row2">
+                <img
+                  class="category-card__image"
+                  src="../icons/icon3-container1.svg"
+                  alt="Category 3"
+                />
+                <figcaption class="category-card__title">Category 3</figcaption>
+                <img
+                  class="category-card__image"
+                  src="../icons/icon4-container1.svg"
+                  alt="Category 4"
+                />
+                <figcaption class="category-card__title">Category 4</figcaption>
+              </figure>
+            </div>
+            <div class="action-card">
+              <h3 class="action-card__heading">Action</h3>
+              <img
+                class="action-card__image"
+                src="../icons/icon-next.svg"
+                alt="Action"
+              />
+            </div>
+          </article>
+          <article class="category-card">
+            <div class="category-card__image-container">
+              <figure class="category-card__image-row2">
+                <img
+                  class="category-card__image"
+                  src="../icons/icon1-container2.svg"
+                  alt="Category 5"
+                />
+                <figcaption class="category-card__title">Category 5</figcaption>
+                <img
+                  class="category-card__image"
+                  src="../icons/icon2-container2.svg"
+                  alt="Category 6"
+                />
+                <figcaption class="category-card__title">Category 6</figcaption>
+              </figure>
+              <figure class="category-card__image-row2">
+                <img
+                  class="category-card__image"
+                  src="../icons/icon3-container2.svg"
+                  alt="Category 7"
+                />
+                <figcaption class="category-card__title">Category 7</figcaption>
+                <img
+                  class="category-card__image"
+                  src="../icons/icon4-container2.svg"
+                  alt="Category 8"
+                />
+                <figcaption class="category-card__title">Category 8</figcaption>
+              </figure>
+            </div>
+            <div class="action-card">
+              <h3 class="action-card__heading">Adventure</h3>
+              <img
+                class="action-card__image"
+                src="../icons/icon-next.svg"
+                alt="Adventure"
+              />
+            </div>
+          </article>
+          <article class="category-card">
+            <div class="category-card__image-container">
+              <figure class="category-card__image-row2">
+                <img
+                  class="category-card__image"
+                  src="../icons/icon1-container3.svg"
+                  alt="Category 9"
+                />
+                <figcaption class="category-card__title">Category 9</figcaption>
+                <img
+                  class="category-card__image"
+                  src="../icons/icon2-container3.svg"
+                  alt="Category 10"
+                />
+                <figcaption class="category-card__title">
+                  Category 10
+                </figcaption>
+              </figure>
+              <figure class="category-card__image-row2">
+                <img
+                  class="category-card__image"
+                  src="../icons/icon3-container3.svg"
+                  alt="Category 11"
+                />
+                <figcaption class="category-card__title">
+                  Category 11
+                </figcaption>
+                <img
+                  class="category-card__image"
+                  src="../icons/icon4-container3.svg"
+                  alt="Category 12"
+                />
+                <figcaption class="category-card__title">
+                  Category 12
+                </figcaption>
+              </figure>
+            </div>
+            <div class="action-card">
+              <h3 class="action-card__heading">Comedy</h3>
+              <img
+                class="action-card__image"
+                src="../icons/icon-next.svg"
+                alt="Comedy"
+              />
+            </div>
+          </article>
+          <article class="category-card">
+            <div class="category-card__image-container">
+              <figure class="category-card__image-row2">
+                <img
+                  class="category-card__image"
+                  src="../icons/icon1-container4.svg"
+                  alt="Category 13"
+                />
+                <figcaption class="category-card__title">
+                  Category 13
+                </figcaption>
+                <img
+                  class="category-card__image"
+                  src="../icons/icon2-container4.svg"
+                  alt="Category 14"
+                />
+                <figcaption class="category-card__title">
+                  Category 14
+                </figcaption>
+              </figure>
+              <figure class="category-card__image-row2">
+                <img
+                  class="category-card__image"
+                  src="../icons/icon3-container4.svg"
+                  alt="Category 15"
+                />
+                <figcaption class="category-card__title">
+                  Category 15
+                </figcaption>
+                <img
+                  class="category-card__image"
+                  src="../icons/icon4-container4.svg"
+                  alt="Category 16"
+                />
+                <figcaption class="category-card__title">
+                  Category 16
+                </figcaption>
+              </figure>
+            </div>
+            <div class="action-card">
+              <h3 class="action-card__heading">Drama</h3>
+              <img
+                class="action-card__image"
+                src="../icons/icon-next.svg"
+                alt="Drama"
+              />
+            </div>
+          </article>
+          <article class="category-card">
+            <div class="category-card__image-container">
+              <figure class="category-card__image-row2">
+                <img
+                  class="category-card__image"
+                  src="../icons/icon1-container5.svg"
+                  alt="Category 17"
+                />
+                <figcaption class="category-card__title">
+                  Category 17
+                </figcaption>
+                <img
+                  class="category-card__image"
+                  src="../icons/icon2-container5.svg"
+                  alt="Category 18"
+                />
+                <figcaption class="category-card__title">
+                  Category 18
+                </figcaption>
+              </figure>
+              <figure class="category-card__image-row2">
+                <img
+                  class="category-card__image"
+                  src="../icons/icon3-container5.svg"
+                  alt="Category 19"
+                />
+                <figcaption class="category-card__title">
+                  Category 19
+                </figcaption>
+                <img
+                  class="category-card__image"
+                  src="../icons/icon4-container5.svg"
+                  alt="Category 20"
+                />
+                <figcaption class="category-card__title">
+                  Category 20
+                </figcaption>
+              </figure>
+            </div>
+            <div class="action-card">
+              <h3 class="action-card__heading">Horror</h3>
+              <img
+                class="action-card__image"
+                src="../icons/icon-next.svg"
+                alt="Horror"
+              />
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="devices-section">
+        <div class="devices-intro">
+          <article class="devices-article">
+            <h2 class="devices-article__heading">
+              We Provide you streaming experience across various devices.
+            </h2>
+            <p class="devices-article__description">
+              With StreamVibe, you can enjoy your favorite movies and TV shows
+              anytime, anywhere. Our platform is designed to be compatible with
+              a wide range of devices, ensuring that you never miss a moment of
+              entertainment.
+            </p>
+          </article>
+        </div>
+
+        <div class="devices-grid">
+          <article class="device-card">
+            <div class="device-card-header">
+              <img
+                class="device-icon"
+                src="../icons/icon-phone.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <h3 class="device-name">Smartphones</h3>
+            </div>
+            <p class="device-description">
+              StreamVibe is optimized for both Android and iOS smartphones.
+              Download our app from the Google Play Store or the Apple App
+              Store.
+            </p>
+          </article>
+
+          <article class="device-card">
+            <div class="device-card-header">
+              <img
+                class="device-icon"
+                src="../icons/icon-tablet.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <h3 class="device-name">Tablet</h3>
+            </div>
+            <p class="device-description">
+              StreamVibe is optimized for both Android and iOS smartphones.
+              Download our app from the Google Play Store or the Apple App
+              Store.
+            </p>
+          </article>
+
+          <article class="device-card">
+            <div class="device-card-header">
+              <img
+                class="device-icon"
+                src="../icons/icon-TV.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <h3 class="device-name">Smart TV</h3>
+            </div>
+            <p class="device-description">
+              StreamVibe is optimized for both Android and iOS smartphones.
+              Download our app from the Google Play Store or the Apple App
+              Store.
+            </p>
+          </article>
+
+          <article class="device-card">
+            <div class="device-card-header">
+              <img
+                class="device-icon"
+                src="../icons/icon-laptop.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <h3 class="device-name">Laptops</h3>
+            </div>
+            <p class="device-description">
+              StreamVibe is optimized for both Android and iOS smartphones.
+              Download our app from the Google Play Store or the Apple App
+              Store.
+            </p>
+          </article>
+
+          <article class="device-card">
+            <div class="device-card-header">
+              <img
+                class="device-icon"
+                src="../icons/icon-gaming-console.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <h3 class="device-name">Gaming Consoles</h3>
+            </div>
+            <p class="device-description">
+              StreamVibe is optimized for both Android and iOS smartphones.
+              Download our app from the Google Play Store or the Apple App
+              Store.
+            </p>
+          </article>
+
+          <article class="device-card">
+            <div class="device-card-header">
+              <img
+                class="device-icon"
+                src="../icons/icon-VR.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <h3 class="device-name">VR Headsets</h3>
+            </div>
+            <p class="device-description">
+              StreamVibe is optimized for both Android and iOS smartphones.
+              Download our app from the Google Play Store or the Apple App
+              Store.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="faq__header">
+          <div class="faq__intro">
+            <h2 id="faq-heading" class="faq__title">
+              Frequently Asked Questions
+            </h2>
+            <p class="faq__description">
+              Got questions? We've got answers! Check out our FAQ section to
+              find answers to the most common questions about StreamVibe.
+            </p>
+          </div>
+          <button class="faq__ask-button">Ask a Question</button>
+        </div>
+
+        <div class="faq__container">
+          <div class="faq__column">
+            <article class="faq__item faq__item--open">
+              <div class="faq__question">
+                <span class="faq__number">01</span>
+                <h3 class="faq__question-text">What is StreamVibe?</h3>
+              </div>
+              <div class="faq__answer">
+                <p>
+                  StreamVibe is a streaming service that allows you to watch
+                  movies and shows on demand.
+                </p>
+              </div>
+              <img
+                class="faq__icon"
+                src="../icons/icon-minus.svg"
+                alt="icon-minus"
+              />
+            </article>
+
+            <div class="faq__divider"></div>
+
+            <article class="faq__item">
+              <div class="faq__question">
+                <span class="faq__number">02</span>
+                <h3 class="faq__question-text">
+                  How much does StreamVibe cost?
+                </h3>
+              </div>
+              <img class="faq__icon" src="../icons/icon-plus.svg"
+              alt="icon-plus"
+            </article>
+
+            <div class="faq__divider"></div>
+
+            <article class="faq__item">
+              <div class="faq__question">
+                <span class="faq__number">03</span>
+                <h3 class="faq__question-text">
+                  What content is available on StreamVibe?
+                </h3>
+              </div>
+              <img
+                class="faq__icon"
+                src="../icons/icon-plus.svg"
+                alt="icon-plus"
+              />
+            </article>
+
+            <div class="faq__divider"></div>
+
+            <article class="faq__item">
+              <div class="faq__question">
+                <span class="faq__number">04</span>
+                <h3 class="faq__question-text">How can I watch StreamVibe?</h3>
+              </div>
+              <img
+                class="faq__icon"
+                src="../icons/icon-plus.svg"
+                alt="icon-plus"
+              />
+            </article>
+          </div>
+
+          <div class="faq__column">
+            <article class="faq__item">
+              <div class="faq__question">
+                <span class="faq__number">05</span>
+                <h3 class="faq__question-text">
+                  How do I sign up for StreamVibe?
+                </h3>
+              </div>
+              <img
+                class="faq__icon"
+                src="../icons/icon-plus.svg"
+                alt="icon-plus"
+              />
+            </article>
+
+            <div class="faq__divider"></div>
+
+            <article class="faq__item">
+              <div class="faq__question">
+                <span class="faq__number">06</span>
+                <h3 class="faq__question-text">
+                  What is the StreamVibe free trial?
+                </h3>
+              </div>
+              <img
+                class="faq__icon"
+                src="../icons/icon-plus.svg"
+                alt="icon-plus"
+              />
+            </article>
+
+            <div class="faq__divider"></div>
+
+            <article class="faq__item">
+              <div class="faq__question">
+                <span class="faq__number">07</span>
+                <h3 class="faq__question-text">
+                  How do I contact StreamVibe customer support?
+                </h3>
+              </div>
+              <img
+                class="faq__icon"
+                src="../icons/icon-plus.svg"
+                alt="icon-plus"
+              />
+            </article>
+
+            <div class="faq__divider"></div>
+
+            <article class="faq__item">
+              <div class="faq__question">
+                <span class="faq__number">08</span>
+                <h3 class="faq__question-text">
+                  What are the StreamVibe payment methods?
+                </h3>
+              </div>
+              <img
+                class="faq__icon"
+                src="../icons/icon-plus.svg"
+                alt="icon-plus"
+              />
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
