@@ -1,0 +1,2099 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css-files/home-page.css" />
+    <title>Movies & Shows Page</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="../icons/logo-icon.svg" alt="StreamVibe" />
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="list-item">
+            <a href="../html-files/home-page.html">Home</a>
+          </li>
+          <li class="list-item">
+            <a href="../html-files/movies-shows-page.html">Movies&Shows</a>
+          </li>
+          <li class="list-item">
+            <a href="../html-files/support-page.html">Support</a>
+          </li>
+          <li class="list-item">
+            <a href="../html-files/subscription-page.html">Subscriptions</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="search&notification">
+        <form
+          class="search-form"
+          action="../html-files/search-page.html"
+          method="get"
+        >
+          <input
+            class="search-input"
+            type="text"
+            placeholder="Search for movies, shows, and more..."
+            name="search"
+          />
+          <button class="search-button" type="submit">
+            <img alt="icon-search" src="../icons/icon-search.svg" />
+          </button>
+        </form>
+        <button class="notification-button" type="submit">
+          <img alt="icon-notification" src="../icons/icon-notification.svg" />
+        </button>
+      </div>
+      <div id="searchResults" class="results">
+        <h2>Результати пошуку</h2>
+        <p>Тут будуть відображатися результати...</p>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="movie-hero">
+        <div class="movie-hero__content">
+          <img
+            class="movie-hero__poster"
+            src="../icons/avengers-icon.svg"
+            alt="Avengers: Endgame"
+          />
+          <div class="movie-hero__info">
+            <h1 id="movie-title" class="movie-hero__title">
+              Avengers: Endgame
+            </h1>
+            <p class="movie-hero__description">
+              With the help of remaining allies, the Avengers must assemble once
+              more in order to undo Thanos's actions and undo the chaos to the
+              universe, no matter what consequences may be in store, and no
+              matter who they face... Avenge the fallen.
+            </p>
+
+            <div class="movie-hero__actions">
+              <button class="movie-hero__play-btn">
+                <img
+                  class="movie-hero__play-icon"
+                  src="../icons/icon-play.svg"
+                  alt="Play"
+                />
+                <span class="movie-hero__play-text">Play Now</span>
+              </button>
+
+              <div class="movie-hero__secondary-actions">
+                <button class="movie-hero__action-btn">
+                  <img
+                    class="movie-hero__action-icon"
+                    src="../icons/icon-plus.svg"
+                    alt="Add to List"
+                  />
+                </button>
+                <button class="movie-hero__action-btn">
+                  <img
+                    class="movie-hero__action-icon"
+                    src="../icons/icon-like.svg"
+                    alt="Like"
+                  />
+                </button>
+                <button class="movie-hero__action-btn">
+                  <img
+                    class="movie-hero__action-icon"
+                    src="../icons/icon-vol.svg"
+                    alt="Volume"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="movie-hero__navigation">
+          <button class="movie-hero__nav-btn"></button>
+
+          <div class="movie-hero__pagination">
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+          </div>
+
+          <button class="movie-hero__nav-btn"></button>
+        </div>
+      </section>
+      <section class="sub-container">
+        <header class="text-container">
+          <h2 class="heading">Movies</h2>
+        </header>
+      </section>
+      <section class="container">
+        <header class="sub-container">
+          <h2 class="heading">Our Genres</h2>
+          <nav class="buttons-container">
+            <button class="button-icon">
+              <img alt="Previous" src="../icons/icon-previous.svg" />
+            </button>
+            <div class="indicators-container">
+              <span class="shape"></span>
+              <span class="shape1"></span>
+              <span class="shape1"></span>
+              <span class="shape1"></span>
+            </div>
+            <button class="button-icon">
+              <img alt="Next" src="../icons/icon-next.svg" />
+            </button>
+          </nav>
+        </header>
+
+        <div class="sub-container1">
+          <ul class="genre-list">
+            <li>
+              <article class="card">
+                <div class="container1">
+                  <figure class="image-container">
+                    <img
+                      class="image-icon"
+                      alt="Action Movie"
+                      src="../icons/icon1-container1.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Action Movie"
+                      src="../icons/icon2-container1.svg"
+                    />
+                  </figure>
+                  <figure class="image-container1">
+                    <img
+                      class="image-icon"
+                      alt="Action Movie"
+                      src="../icons/icon3-container1.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Action Movie"
+                      src="../icons/icon4-container1.svg"
+                    />
+                  </figure>
+                  <div class="fade-out-bottom"></div>
+                </div>
+                <footer class="container2">
+                  <h3 class="heading1">Action</h3>
+                  <img
+                    class="icon"
+                    alt="Action Genre Icon"
+                    src="../icons/icon-next.svg"
+                  />
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <div class="container1">
+                  <figure class="image-container">
+                    <img
+                      class="image-icon"
+                      alt="Adventure Movie"
+                      src="../icons/icon1-container2.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Adventure Movie"
+                      src="../icons/icon2-container2.svg"
+                    />
+                  </figure>
+                  <figure class="image-container1">
+                    <img
+                      class="image-icon"
+                      alt="Adventure Movie"
+                      src="../icons/icon3-container2.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Adventure Movie"
+                      src="../icons/icon4-container2.svg"
+                    />
+                  </figure>
+                  <div class="fade-out-bottom"></div>
+                </div>
+                <footer class="container2">
+                  <h3 class="heading1">Adventure</h3>
+                  <img
+                    class="icon"
+                    alt="Adventure Genre Icon"
+                    src="../icons/icon-next.svg"
+                  />
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <div class="container1">
+                  <figure class="image-container">
+                    <img
+                      class="image-icon"
+                      alt="Comedy Movie"
+                      src="../icons/icon1-container3.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Comedy Movie"
+                      src="../icons/icon2-container3.svg"
+                    />
+                  </figure>
+                  <figure class="image-container1">
+                    <img
+                      class="image-icon"
+                      alt="Comedy Movie"
+                      src="../icons/icon3-container3.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Comedy Movie"
+                      src="../icons/icon4-container3.svg"
+                    />
+                  </figure>
+                  <div class="fade-out-bottom"></div>
+                </div>
+                <footer class="container2">
+                  <h3 class="heading1">Comedy</h3>
+                  <img
+                    class="icon"
+                    alt="Comedy Genre Icon"
+                    src="../icons/icon-next.svg"
+                  />
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <div class="container1">
+                  <figure class="image-container">
+                    <img
+                      class="image-icon"
+                      alt="Drama Movie"
+                      src="../icons/icon1-container4.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Drama Movie"
+                      src="../icons/icon2-container4.svg"
+                    />
+                  </figure>
+                  <figure class="image-container1">
+                    <img
+                      class="image-icon"
+                      alt="Drama Movie"
+                      src="../icons/icon3-container4.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Drama Movie"
+                      src="../icons/icon4-container4.svg"
+                    />
+                  </figure>
+                  <div class="fade-out-bottom"></div>
+                </div>
+                <footer class="container2">
+                  <h3 class="heading1">Drama</h3>
+                  <img
+                    class="icon"
+                    alt="Drama Genre Icon"
+                    src="../icons/icon-next.svg"
+                  />
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <div class="container1">
+                  <figure class="image-container">
+                    <img
+                      class="image-icon"
+                      alt="Horror Movie"
+                      src="../icons/icon1-container5.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Horror Movie"
+                      src="../icons/icon2-container5.svg"
+                    />
+                  </figure>
+                  <figure class="image-container1">
+                    <img
+                      class="image-icon"
+                      alt="Horror Movie"
+                      src="../icons/icon3-container5.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Horror Movie"
+                      src="../icons/icon4-container5.svg"
+                    />
+                  </figure>
+                  <div class="fade-out-bottom"></div>
+                </div>
+                <footer class="container2">
+                  <h3 class="heading1">Horror</h3>
+                  <img
+                    class="icon"
+                    alt="Horror Genre Icon"
+                    src="../icons/icon-next.svg"
+                  />
+                </footer>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="container">
+        <header class="sub-container">
+          <h2 class="heading">Popular Top 10 In Genres</h2>
+          <nav class="buttons-container">
+            <button class="button-icon">
+              <img alt="Previous" src="../icons/icon-previous.svg" />
+            </button>
+            <div class="indicators-container">
+              <span class="shape"></span>
+              <span class="shape1"></span>
+              <span class="shape1"></span>
+              <span class="shape1"></span>
+            </div>
+            <button class="button-icon">
+              <img alt="Next" src="../icons/icon-next.svg" />
+            </button>
+          </nav>
+        </header>
+
+        <div class="sub-container1">
+          <ul class="genre-list">
+            <li>
+              <article class="card">
+                <div class="container1">
+                  <figure class="image-container">
+                    <img
+                      class="image-icon"
+                      alt="Action Movie"
+                      src="../icons/action-icon1.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Action Movie"
+                      src="../icons/action-icon2.svg"
+                    />
+                  </figure>
+                  <figure class="image-container1">
+                    <img
+                      class="image-icon"
+                      alt="Action Movie"
+                      src="../icons/action-icon3.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Action Movie"
+                      src="../icons/action-icon4.svg"
+                    />
+                  </figure>
+                  <div class="fade-out-bottom"></div>
+                </div>
+                <footer class="container2">
+                  <div class="sub-container2">
+                    <span class="container3">
+                      <p class="text">Top 10 In</p>
+                    </span>
+                    <h3 class="heading1">Action</h3>
+                  </div>
+                  <img
+                    class="icon"
+                    alt="Action Genre Icon"
+                    src="../icons/icon-next.svg"
+                  />
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <div class="container1">
+                  <figure class="image-container">
+                    <img
+                      class="image-icon"
+                      alt="Adventure Movie"
+                      src="../icons/icon1-container2.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Adventure Movie"
+                      src="../icons/icon2-container2.svg"
+                    />
+                  </figure>
+                  <figure class="image-container1">
+                    <img
+                      class="image-icon"
+                      alt="Adventure Movie"
+                      src="../icons/icon3-container2.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Adventure Movie"
+                      src="../icons/icon4-container2.svg"
+                    />
+                  </figure>
+                  <div class="fade-out-bottom"></div>
+                </div>
+                <footer class="container2">
+                  <div class="sub-container2">
+                    <span class="container3">
+                      <p class="text">Top 10 In</p>
+                    </span>
+                    <h3 class="heading1">Adventure</h3>
+                  </div>
+                  <img
+                    class="icon"
+                    alt="Adventure Genre Icon"
+                    src="../icons/icon-next.svg"
+                  />
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <div class="container1">
+                  <figure class="image-container">
+                    <img
+                      class="image-icon"
+                      alt="Comedy Movie"
+                      src="../icons/icon1-container3.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Comedy Movie"
+                      src="../icons/icon2-container3.svg"
+                    />
+                  </figure>
+                  <figure class="image-container1">
+                    <img
+                      class="image-icon"
+                      alt="Comedy Movie"
+                      src="../icons/icon3-container3.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Comedy Movie"
+                      src="../icons/icon4-container3.svg"
+                    />
+                  </figure>
+                  <div class="fade-out-bottom"></div>
+                </div>
+                <footer class="container2">
+                  <div class="sub-container2">
+                    <span class="container3">
+                      <p class="text">Top 10 In</p>
+                    </span>
+                    <h3 class="heading1">Comedy</h3>
+                  </div>
+                  <img
+                    class="icon"
+                    alt="Comedy Genre Icon"
+                    src="../icons/icon-next.svg"
+                  />
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <div class="container1">
+                  <figure class="image-container">
+                    <img
+                      class="image-icon"
+                      alt="Drama Movie"
+                      src="../icons/icon1-container4.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Drama Movie"
+                      src="../icons/icon2-container4.svg"
+                    />
+                  </figure>
+                  <figure class="image-container1">
+                    <img
+                      class="image-icon"
+                      alt="Drama Movie"
+                      src="../icons/icon3-container4.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Drama Movie"
+                      src="../icons/icon4-container4.svg"
+                    />
+                  </figure>
+                  <div class="fade-out-bottom"></div>
+                </div>
+                <footer class="container2">
+                  <div class="sub-container2">
+                    <span class="container3">
+                      <p class="text">Top 10 In</p>
+                    </span>
+                    <h3 class="heading1">Drama</h3>
+                  </div>
+                  <img
+                    class="icon"
+                    alt="Drama Genre Icon"
+                    src="../icons/icon-next.svg"
+                  />
+                </footer>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="container">
+        <header class="sub-container">
+          <h2 class="heading">Trending Now</h2>
+          <nav class="buttons-container">
+            <button class="button-icon">
+              <img alt="Previous" src="../icons/icon-previous.svg" />
+            </button>
+            <div class="indicators-container">
+              <span class="shape"></span>
+              <span class="shape1"></span>
+              <span class="shape1"></span>
+              <span class="shape1"></span>
+            </div>
+            <button class="button-icon">
+              <img alt="Next" src="../icons/icon-next.svg" />
+            </button>
+          </nav>
+        </header>
+
+        <div class="sub-container1">
+          <ul class="trending-list">
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="Trending Movie"
+                    src="../icons/trend-icon1.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <div class="sub-container2">
+                    <img
+                      class="icon"
+                      alt="Duration Icon"
+                      src="../icons/clock-icon.svg"
+                    />
+                    <p class="text">1h 30min</p>
+                  </div>
+                  <div class="sub-container3">
+                    <img
+                      class="icon"
+                      alt="Views Icon"
+                      src="../icons/eye-icon.svg"
+                    />
+                    <p class="text">2K</p>
+                  </div>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="Trending Movie"
+                    src="../icons/trend-icon2.png"
+                  />
+                </figure>
+                <footer class="container1">
+                  <div class="sub-container2">
+                    <img
+                      class="icon"
+                      alt="Duration Icon"
+                      src="../icons/clock-icon.svg"
+                    />
+                    <p class="text">1h 57min</p>
+                  </div>
+                  <div class="sub-container3">
+                    <img
+                      class="icon"
+                      alt="Views Icon"
+                      src="../icons/eye-icon.svg"
+                    />
+                    <p class="text">1.5K</p>
+                  </div>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="Trending Movie"
+                    src="../icons/trend-icon3.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <div class="sub-container2">
+                    <img
+                      class="icon"
+                      alt="Duration Icon"
+                      src="../icons/clock-icon.svg"
+                    />
+                    <p class="text">2h 10min</p>
+                  </div>
+                  <div class="sub-container3">
+                    <img
+                      class="icon"
+                      alt="Views Icon"
+                      src="../icons/eye-icon.svg"
+                    />
+                    <p class="text">1.8K</p>
+                  </div>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="Trending Movie"
+                    src="../icons/trend-icon4.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <div class="sub-container2">
+                    <img
+                      class="icon"
+                      alt="Duration Icon"
+                      src="../icons/clock-icon.svg"
+                    />
+                    <p class="text">2h 20min</p>
+                  </div>
+                  <div class="sub-container3">
+                    <img
+                      class="icon"
+                      alt="Views Icon"
+                      src="../icons/eye-icon.svg"
+                    />
+                    <p class="text">3K</p>
+                  </div>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="Trending Movie"
+                    src="../icons/trend-icon5.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <div class="sub-container2">
+                    <img
+                      class="icon"
+                      alt="Duration Icon"
+                      src="../icons/clock-icon.svg"
+                    />
+                    <p class="text">1h 42min</p>
+                  </div>
+                  <div class="sub-container3">
+                    <img
+                      class="icon"
+                      alt="Views Icon"
+                      src="../icons/eye-icon.svg"
+                    />
+                    <p class="text">5K</p>
+                  </div>
+                </footer>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="container">
+        <header class="sub-container">
+          <h2 class="heading">New Releases</h2>
+          <nav class="buttons-container">
+            <button class="button-icon">
+              <img alt="Previous" src="../icons/icon-previous.svg" />
+            </button>
+            <div class="indicators-container">
+              <span class="shape"></span>
+              <span class="shape1"></span>
+              <span class="shape1"></span>
+              <span class="shape1"></span>
+            </div>
+            <button class="button-icon">
+              <img alt="Next" src="../icons/icon-next.svg" />
+            </button>
+          </nav>
+        </header>
+
+        <div class="sub-container1">
+          <ul class="release-list">
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="Movie Poster"
+                    src="../icons/releas-icon1.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <p class="text">
+                    Released at
+                    <time datetime="2023-04-14">14 April 2023</time>
+                  </p>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="Movie Poster"
+                    src="../icons/releas-icon2.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <p class="text">
+                    Released at
+                    <time datetime="2023-04-22">22 April 2023</time>
+                  </p>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="Movie Poster"
+                    src="../icons/releas-icon3.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <p class="text">
+                    Released at
+                    <time datetime="2023-04-13">13 April 2023</time>
+                  </p>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="Movie Poster"
+                    src="../icons/releas-icon4.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <p class="text">
+                    Released at
+                    <time datetime="2023-04-19">19 April 2023</time>
+                  </p>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="Movie Poster"
+                    src="../icons/releas-icon5.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <p class="text">
+                    Released at
+                    <time datetime="2023-04-11">11 April 2023</time>
+                  </p>
+                </footer>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="container">
+        <header class="sub-container">
+          <h2 class="heading">Must-Watch Movies</h2>
+          <nav class="buttons-container">
+            <button class="button-icon">
+              <img alt="Previous" src="../icons/icon-previous.svg" />
+            </button>
+            <div class="indicators-container">
+              <span class="shape"></span>
+              <span class="shape1"></span>
+              <span class="shape1"></span>
+              <span class="shape1"></span>
+            </div>
+            <button class="button-icon">
+              <img alt="Next" src="../icons/icon-next.svg" />
+            </button>
+          </nav>
+        </header>
+
+        <div class="sub-container1">
+          <ul class="movie-list">
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="Movie Poster"
+                    src="../icons/must-watch-icon1.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <div class="sub-container2">
+                    <img
+                      class="icon"
+                      alt="Duration Icon"
+                      src="../icons/clock-icon.svg"
+                    />
+                    <p class="text"><time datetime="PT1H57M">1h 57min</time></p>
+                  </div>
+                  <div class="sub-container3">
+                    <div class="rating">
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/half-star-icon.svg"
+                      />
+                    </div>
+                    <p class="text">20K views</p>
+                  </div>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="Movie Poster"
+                    src="../icons/must-watch-icon2.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <div class="sub-container2">
+                    <img
+                      class="icon"
+                      alt="Duration Icon"
+                      src="../icons/clock-icon.svg"
+                    />
+                    <p class="text"><time datetime="PT1H30M">1h 30min</time></p>
+                  </div>
+                  <div class="sub-container3">
+                    <div class="rating">
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/empty-star-icon.svg"
+                      />
+                    </div>
+                    <p class="text">20K views</p>
+                  </div>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="Movie Poster"
+                    src="../icons/must-watch-icon3.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <div class="sub-container2">
+                    <img
+                      class="icon"
+                      alt="Duration Icon"
+                      src="../icons/clock-icon.svg"
+                    />
+                    <p class="text"><time datetime="PT1H42M">1h 42min</time></p>
+                  </div>
+                  <div class="sub-container3">
+                    <div class="rating">
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/half-star-icon.svg"
+                      />
+                    </div>
+                    <p class="text">20K views</p>
+                  </div>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="Movie Poster"
+                    src="../icons/must-watch-icon4.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <div class="sub-container2">
+                    <img
+                      class="icon"
+                      alt="Duration Icon"
+                      src="../icons/clock-icon.svg"
+                    />
+                    <p class="text"><time datetime="PT2H10M">2h 10min</time></p>
+                  </div>
+                  <div class="sub-container3">
+                    <div class="rating">
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/empty-star-icon.svg"
+                      />
+                    </div>
+                    <p class="text">20K views</p>
+                  </div>
+                </footer>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="sub-container">
+        <header class="text-container">
+          <h2 class="heading">Shows</h2>
+        </header>
+      </section>
+      <section class="container">
+        <header class="sub-container">
+          <h2 class="heading">Our Genres</h2>
+          <nav class="buttons-container">
+            <button class="button-icon">
+              <img alt="Previous" src="../icons/icon-previous.svg" />
+            </button>
+            <div class="indicators-container">
+              <span class="shape"></span>
+              <span class="shape1"></span>
+              <span class="shape1"></span>
+              <span class="shape1"></span>
+            </div>
+            <button class="button-icon">
+              <img alt="Next" src="../icons/icon-next.svg" />
+            </button>
+          </nav>
+        </header>
+
+        <div class="sub-container1">
+          <ul class="genre-list">
+            <li>
+              <article class="card">
+                <div class="container1">
+                  <figure class="image-container">
+                    <img
+                      class="image-icon"
+                      alt="Action Movie"
+                      src="../icons/icon1-container1.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Action Movie"
+                      src="../icons/icon2-container1.svg"
+                    />
+                  </figure>
+                  <figure class="image-container1">
+                    <img
+                      class="image-icon"
+                      alt="Action Movie"
+                      src="../icons/icon3-container1.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Action Movie"
+                      src="../icons/icon4-container1.svg"
+                    />
+                  </figure>
+                  <div class="fade-out-bottom"></div>
+                </div>
+                <footer class="container2">
+                  <h3 class="heading1">Action</h3>
+                  <img
+                    class="icon"
+                    alt="Action Genre Icon"
+                    src="../icons/icon-next.svg"
+                  />
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <div class="container1">
+                  <figure class="image-container">
+                    <img
+                      class="image-icon"
+                      alt="Adventure Movie"
+                      src="../icons/icon1-container2.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Adventure Movie"
+                      src="../icons/icon2-container2.svg"
+                    />
+                  </figure>
+                  <figure class="image-container1">
+                    <img
+                      class="image-icon"
+                      alt="Adventure Movie"
+                      src="../icons/icon3-container2.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Adventure Movie"
+                      src="../icons/icon4-container2.svg"
+                    />
+                  </figure>
+                  <div class="fade-out-bottom"></div>
+                </div>
+                <footer class="container2">
+                  <h3 class="heading1">Adventure</h3>
+                  <img
+                    class="icon"
+                    alt="Adventure Genre Icon"
+                    src="../icons/icon-next.svg"
+                  />
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <div class="container1">
+                  <figure class="image-container">
+                    <img
+                      class="image-icon"
+                      alt="Comedy Movie"
+                      src="../icons/icon1-container3.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Comedy Movie"
+                      src="../icons/icon2-container3.svg"
+                    />
+                  </figure>
+                  <figure class="image-container1">
+                    <img
+                      class="image-icon"
+                      alt="Comedy Movie"
+                      src="../icons/icon3-container3.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Comedy Movie"
+                      src="../icons/icon4-container3.svg"
+                    />
+                  </figure>
+                  <div class="fade-out-bottom"></div>
+                </div>
+                <footer class="container2">
+                  <h3 class="heading1">Comedy</h3>
+                  <img
+                    class="icon"
+                    alt="Comedy Genre Icon"
+                    src="../icons/icon-next.svg"
+                  />
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <div class="container1">
+                  <figure class="image-container">
+                    <img
+                      class="image-icon"
+                      alt="Drama Movie"
+                      src="../icons/icon1-container4.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Drama Movie"
+                      src="../icons/icon2-container4.svg"
+                    />
+                  </figure>
+                  <figure class="image-container1">
+                    <img
+                      class="image-icon"
+                      alt="Drama Movie"
+                      src="../icons/icon3-container4.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Drama Movie"
+                      src="../icons/icon4-container4.svg"
+                    />
+                  </figure>
+                  <div class="fade-out-bottom"></div>
+                </div>
+                <footer class="container2">
+                  <h3 class="heading1">Drama</h3>
+                  <img
+                    class="icon"
+                    alt="Drama Genre Icon"
+                    src="../icons/icon-next.svg"
+                  />
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <div class="container1">
+                  <figure class="image-container">
+                    <img
+                      class="image-icon"
+                      alt="Horror Movie"
+                      src="../icons/icon1-container5.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Horror Movie"
+                      src="../icons/icon2-container5.svg"
+                    />
+                  </figure>
+                  <figure class="image-container1">
+                    <img
+                      class="image-icon"
+                      alt="Horror Movie"
+                      src="../icons/icon3-container5.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Horror Movie"
+                      src="../icons/icon4-container5.svg"
+                    />
+                  </figure>
+                  <div class="fade-out-bottom"></div>
+                </div>
+                <footer class="container2">
+                  <h3 class="heading1">Horror</h3>
+                  <img
+                    class="icon"
+                    alt="Horror Genre Icon"
+                    src="../icons/icon-next.svg"
+                  />
+                </footer>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="container">
+        <header class="sub-container">
+          <h2 class="heading">Popular Top 10 In Genres</h2>
+          <nav class="buttons-container">
+            <button class="button-icon">
+              <img alt="Previous" src="../icons/icon-previous.svg" />
+            </button>
+            <div class="indicators-container">
+              <span class="shape"></span>
+              <span class="shape1"></span>
+              <span class="shape1"></span>
+              <span class="shape1"></span>
+            </div>
+            <button class="button-icon">
+              <img alt="Next" src="../icons/icon-next.svg" />
+            </button>
+          </nav>
+        </header>
+
+        <div class="sub-container1">
+          <ul class="genre-list">
+            <li>
+              <article class="card">
+                <div class="container1">
+                  <figure class="image-container">
+                    <img
+                      class="image-icon"
+                      alt="Action Movie"
+                      src="../icons/action-icon1.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Action Movie"
+                      src="../icons/action-icon2.svg"
+                    />
+                  </figure>
+                  <figure class="image-container1">
+                    <img
+                      class="image-icon"
+                      alt="Action Movie"
+                      src="../icons/action-icon3.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Action Movie"
+                      src="../icons/action-icon4.svg"
+                    />
+                  </figure>
+                  <div class="fade-out-bottom"></div>
+                </div>
+                <footer class="container2">
+                  <div class="sub-container2">
+                    <p class="text">Top 10 In</p>
+                    <h3 class="heading1">Action</h3>
+                  </div>
+                  <img
+                    class="icon"
+                    alt="Action Genre Icon"
+                    src="../icons/icon-next.svg"
+                  />
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <div class="container1">
+                  <figure class="image-container">
+                    <img
+                      class="image-icon"
+                      alt="Adventure Movie"
+                      src="../icons/icon1-container2.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Adventure Movie"
+                      src="../icons/icon2-container2.svg"
+                    />
+                  </figure>
+                  <figure class="image-container1">
+                    <img
+                      class="image-icon"
+                      alt="Adventure Movie"
+                      src="../icons/icon3-container2.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Adventure Movie"
+                      src="../icons/icon4-container2.svg"
+                    />
+                  </figure>
+                  <div class="fade-out-bottom"></div>
+                </div>
+                <footer class="container2">
+                  <div class="sub-container2">
+                    <p class="text">Top 10 In</p>
+                    <h3 class="heading1">Adventure</h3>
+                  </div>
+                  <img
+                    class="icon"
+                    alt="Adventure Genre Icon"
+                    src="../icons/icon-next.svg"
+                  />
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <div class="container1">
+                  <figure class="image-container">
+                    <img
+                      class="image-icon"
+                      alt="Comedy Movie"
+                      src="../icons/icon1-container3.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Comedy Movie"
+                      src="../icons/icon2-container3.svg"
+                    />
+                  </figure>
+                  <figure class="image-container1">
+                    <img
+                      class="image-icon"
+                      alt="Comedy Movie"
+                      src="../icons/icon3-container3.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Comedy Movie"
+                      src="../icons/icon4-container3.svg"
+                    />
+                  </figure>
+                  <div class="fade-out-bottom"></div>
+                </div>
+                <footer class="container2">
+                  <div class="sub-container2">
+                    <p class="text">Top 10 In</p>
+                    <h3 class="heading1">Comedy</h3>
+                  </div>
+                  <img
+                    class="icon"
+                    alt="Comedy Genre Icon"
+                    src="../icons/icon-next.svg"
+                  />
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <div class="container1">
+                  <figure class="image-container">
+                    <img
+                      class="image-icon"
+                      alt="Drama Movie"
+                      src="../icons/icon1-container4.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Drama Movie"
+                      src="../icons/icon2-container4.svg"
+                    />
+                  </figure>
+                  <figure class="image-container1">
+                    <img
+                      class="image-icon"
+                      alt="Drama Movie"
+                      src="../icons/icon3-container4.svg"
+                    />
+                    <img
+                      class="image-icon"
+                      alt="Drama Movie"
+                      src="../icons/icon4-container4.svg"
+                    />
+                  </figure>
+                  <div class="fade-out-bottom"></div>
+                </div>
+                <footer class="container2">
+                  <div class="sub-container2">
+                    <p class="text">Top 10 In</p>
+                    <h3 class="heading1">Drama</h3>
+                  </div>
+                  <img
+                    class="icon"
+                    alt="Drama Genre Icon"
+                    src="../icons/icon-next.svg"
+                  />
+                </footer>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="container">
+        <header class="sub-container">
+          <h2 class="heading">Trending Shows Now</h2>
+          <nav class="buttons-container">
+            <button class="button-icon">
+              <img alt="Previous" src="../icons/icon-previous.svg" />
+            </button>
+            <div class="indicators-container">
+              <span class="shape"></span>
+              <span class="shape1"></span>
+              <span class="shape1"></span>
+              <span class="shape1"></span>
+            </div>
+            <button class="button-icon">
+              <img alt="Next" src="../icons/icon-next.svg" />
+            </button>
+          </nav>
+        </header>
+
+        <div class="sub-container1">
+          <ul class="show-list">
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="TV Show Poster"
+                    src="../icons/trend-icon1.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <div class="sub-container2">
+                    <img
+                      class="icon"
+                      alt="Duration Icon"
+                      src="../icons/clock-icon.svg"
+                    />
+                    <p class="text"><time datetime="PT8H20M">8h 20min</time></p>
+                  </div>
+                  <div class="sub-container3">
+                    <img
+                      class="icon"
+                      alt="Season Icon"
+                      src="../icons/eye-icon.svg"
+                    />
+                    <p class="text">4 Seasons</p>
+                  </div>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="TV Show Poster"
+                    src="../icons/trend-icon2.png"
+                  />
+                </figure>
+                <footer class="container1">
+                  <div class="sub-container2">
+                    <img
+                      class="icon"
+                      alt="Duration Icon"
+                      src="../icons/clock-icon.svg"
+                    />
+                    <p class="text">
+                      <time datetime="PT12H23M">12h 23min</time>
+                    </p>
+                  </div>
+                  <div class="sub-container3">
+                    <img
+                      class="icon"
+                      alt="Season Icon"
+                      src="../icons/eye-icon.svg"
+                    />
+                    <p class="text">5 Seasons</p>
+                  </div>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="TV Show Poster"
+                    src="../icons/trend-icon3.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <div class="sub-container2">
+                    <img
+                      class="icon"
+                      alt="Duration Icon"
+                      src="../icons/clock-icon.svg"
+                    />
+                    <p class="text">
+                      <time datetime="PT14H30M">14h 30min</time>
+                    </p>
+                  </div>
+                  <div class="sub-container3">
+                    <img
+                      class="icon"
+                      alt="Season Icon"
+                      src="../icons/eye-icon.svg"
+                    />
+                    <p class="text">3 Seasons</p>
+                  </div>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="TV Show Poster"
+                    src="../icons/trend-icon4.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <div class="sub-container2">
+                    <img
+                      class="icon"
+                      alt="Duration Icon"
+                      src="../icons/clock-icon.svg"
+                    />
+                    <p class="text"><time datetime="PT7H40M">7h 40min</time></p>
+                  </div>
+                  <div class="sub-container3">
+                    <img
+                      class="icon"
+                      alt="Season Icon"
+                      src="../icons/eye-icon.svg"
+                    />
+                    <p class="text">2 Seasons</p>
+                  </div>
+                </footer>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="container">
+        <header class="sub-container">
+          <h2 class="heading">New Released Shows</h2>
+          <nav class="buttons-container">
+            <button class="button-icon">
+              <img alt="Previous" src="../icons/icon-previous.svg" />
+            </button>
+            <div class="indicators-container">
+              <span class="shape"></span>
+              <span class="shape1"></span>
+              <span class="shape1"></span>
+              <span class="shape1"></span>
+            </div>
+            <button class="button-icon">
+              <img alt="Next" src="../icons/icon-next.svg" />
+            </button>
+          </nav>
+        </header>
+
+        <div class="sub-container1">
+          <ul class="show-list">
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="TV Show Poster"
+                    src="../icons/releas-icon1.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <div class="sub-container2">
+                    <img class="icon" alt="Duration Icon" src="Icon.svg" />
+                    <p class="text">
+                      <time datetime="PT12H23M">12h 23min</time>
+                    </p>
+                  </div>
+                  <div class="sub-container3">
+                    <img class="icon" alt="Season Icon" src="Icon.svg" />
+                    <p class="text">5 Seasons</p>
+                  </div>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="TV Show Poster"
+                    src="../icons/releas-icon2.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <div class="sub-container2">
+                    <img class="icon" alt="Duration Icon" src="Icon.svg" />
+                    <p class="text"><time datetime="PT7H40M">7h 40min</time></p>
+                  </div>
+                  <div class="sub-container3">
+                    <img class="icon" alt="Season Icon" src="Icon.svg" />
+                    <p class="text">2 Seasons</p>
+                  </div>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="TV Show Poster"
+                    src="../icons/releas-icon3.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <div class="sub-container2">
+                    <img class="icon" alt="Duration Icon" src="Icon.svg" />
+                    <p class="text"><time datetime="PT8H20M">8h 20min</time></p>
+                  </div>
+                  <div class="sub-container3">
+                    <img class="icon" alt="Season Icon" src="Icon.svg" />
+                    <p class="text">4 Seasons</p>
+                  </div>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="TV Show Poster"
+                    src="../icons/releas-icon4.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <div class="sub-container2">
+                    <img class="icon" alt="Duration Icon" src="Icon.svg" />
+                    <p class="text">
+                      <time datetime="PT10H30M">10h 30min</time>
+                    </p>
+                  </div>
+                  <div class="sub-container3">
+                    <img class="icon" alt="Season Icon" src="Icon.svg" />
+                    <p class="text">3 Seasons</p>
+                  </div>
+                </footer>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="container">
+        <header class="sub-container">
+          <h2 class="heading">Must-Watch Shows</h2>
+          <nav class="buttons-container">
+            <button class="button-icon">
+              <img alt="Previous" src="../icons/icon-previous.svg" />
+            </button>
+            <div class="indicators-container">
+              <span class="shape"></span>
+              <span class="shape1"></span>
+              <span class="shape1"></span>
+              <span class="shape1"></span>
+            </div>
+            <button class="button-icon">
+              <img alt="Next" src="../icons/icon-next.svg" />
+            </button>
+          </nav>
+        </header>
+
+        <div class="sub-container1">
+          <ul class="show-list">
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="TV Show Poster"
+                    src="../icons/must-watch-icon1.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <div class="sub-container2">
+                    <img
+                      class="icon"
+                      alt="Duration Icon"
+                      src="../icons/clock-icon.svg"
+                    />
+                    <p class="text"><time datetime="PT7H40M">7h 40min</time></p>
+                  </div>
+                  <div class="sub-container3">
+                    <div class="rating">
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/half-star-icon.svg"
+                      />
+                    </div>
+                    <p class="text">12K views</p>
+                  </div>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="TV Show Poster"
+                    src="../icons/must-watch-icon2.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <div class="sub-container2">
+                    <img
+                      class="icon"
+                      alt="Duration Icon"
+                      src="../icons/clock-icon.svg"
+                    />
+                    <p class="text">
+                      <time datetime="PT12H23M">12h 23min</time>
+                    </p>
+                  </div>
+                  <div class="sub-container3">
+                    <div class="rating">
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                    </div>
+                    <p class="text">28K views</p>
+                  </div>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="TV Show Poster"
+                    src="../icons/must-watch-icon3.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <div class="sub-container2">
+                    <img
+                      class="icon"
+                      alt="Duration Icon"
+                      src="../icons/clock-icon.svg"
+                    />
+                    <p class="text">
+                      <time datetime="PT10H30M">10h 30min</time>
+                    </p>
+                  </div>
+                  <div class="sub-container3">
+                    <div class="rating">
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/empty-star-icon.svg"
+                      />
+                    </div>
+                    <p class="text">2K views</p>
+                  </div>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="card">
+                <figure class="image-container">
+                  <img
+                    class="image-icon"
+                    alt="TV Show Poster"
+                    src="../icons/must-watch-icon4.svg"
+                  />
+                </figure>
+                <footer class="container1">
+                  <div class="sub-container2">
+                    <img
+                      class="icon"
+                      alt="Duration Icon"
+                      src="../icons/clock-icon.svg"
+                    />
+                    <p class="text"><time datetime="PT8H20M">8h 20min</time></p>
+                  </div>
+                  <div class="sub-container3">
+                    <div class="rating">
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/full-star-icon.svg"
+                      />
+                      <img
+                        class="shape-icon"
+                        alt="Star"
+                        src="../icons/half-star-icon.svg"
+                      />
+                    </div>
+                    <p class="text">32K views</p>
+                  </div>
+                </footer>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="cta-section">
+        <div class="cta-container">
+          <div class="cta-background">
+            <img src="../icons/back-ground-img1.svg" alt="" />
+            <img src="../icons/back-ground-img2.svg" alt="" />
+            <img src="../icons/back-ground-img3.svg" alt="" />
+            <img src="../icons/back-ground-img4.svg" alt="" />
+          </div>
+          <article class="cta-content">
+            <h2 class="cta-title">Start your free trial today!</h2>
+            <p class="cta-text">
+              This is a clear and concise call to action that encourages users
+              to sign up for a free trial of StreamVibe.
+            </p>
+          </article>
+          <button class="primary-button">Start a Free Trail</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <nav class="sub-container">
+          <h2 class="heading">Home</h2>
+          <ul class="links-container">
+            <li><a href="#" class="text-button">Categories</a></li>
+            <li><a href="#" class="text-button">Devices</a></li>
+            <li><a href="#" class="text-button">Pricing</a></li>
+            <li><a href="#" class="text-button">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <nav class="sub-container">
+          <h2 class="heading">Movies</h2>
+          <ul class="links-container">
+            <li><a href="#" class="text-button">Genres</a></li>
+            <li><a href="#" class="text-button">Trending</a></li>
+            <li><a href="#" class="text-button">New Release</a></li>
+            <li><a href="#" class="text-button">Popular</a></li>
+          </ul>
+        </nav>
+
+        <nav class="sub-container">
+          <h2 class="heading">Shows</h2>
+          <ul class="links-container">
+            <li><a href="#" class="text-button">Genres</a></li>
+            <li><a href="#" class="text-button">Trending</a></li>
+            <li><a href="#" class="text-button">New Release</a></li>
+            <li><a href="#" class="text-button">Popular</a></li>
+          </ul>
+        </nav>
+
+        <section class="sub-container">
+          <h2 class="heading">Support</h2>
+          <p><a href="#" class="text-button12">Contact Us</a></p>
+        </section>
+
+        <nav class="sub-container">
+          <h2 class="heading">Subscription</h2>
+          <ul class="links-container">
+            <li><a href="#" class="text-button">Plans</a></li>
+            <li><a href="#" class="text-button">Features</a></li>
+          </ul>
+        </nav>
+
+        <section class="sub-container">
+          <h2 class="heading">Connect With Us</h2>
+          <div class="buttons-container">
+            <a href="#"
+              ><img
+                class="button-icon"
+                alt="Facebook"
+                src="../icons/icon-facebook.svg"
+            /></a>
+            <a href="#"
+              ><img
+                class="button-icon"
+                alt="Twitter"
+                src="../icons/icon-twitter.svg"
+            /></a>
+            <a href="#"
+              ><img
+                class="button-icon"
+                alt="Linkedin"
+                src="../icons/icon-linkedin.svg"
+            /></a>
+          </div>
+        </section>
+      </div>
+
+      <div class="container1">
+        <hr class="line" />
+        <div class="container2">
+          <p class="text">@2023 StreamVib, All Rights Reserved</p>
+          <nav class="buttons-container1">
+            <a href="#" class="text">Terms of Use</a>
+            <span class="line1"></span>
+            <a href="#" class="text">Privacy Policy</a>
+            <span class="line1"></span>
+            <a href="#" class="text">Cookie Policy</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
