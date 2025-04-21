@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css-files/home-page.css" />
+    <title>Subscription Page</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="../icons/logo-icon.svg" alt="StreamVibe" />
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="list-item">
+            <a href="../html-files/home-page.html">Home</a>
+          </li>
+          <li class="list-item">
+            <a href="../html-files/movies-shows-page.html">Movies&Shows</a>
+          </li>
+          <li class="list-item">
+            <a href="../html-files/support-page.html">Support</a>
+          </li>
+          <li class="list-item">
+            <a href="../html-files/subscription-page.html">Subscriptions</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="search&notification">
+        <form
+          class="search-form"
+          action="../html-files/search-page.html"
+          method="get"
+        >
+          <input
+            class="search-input"
+            type="text"
+            placeholder="Search for movies, shows, and more..."
+            name="search"
+          />
+          <button class="search-button" type="submit">
+            <img alt="icon-search" src="../icons/icon-search.svg" />
+          </button>
+        </form>
+        <button class="notification-button" type="submit">
+          <img alt="icon-notification" src="../icons/icon-notification.svg" />
+        </button>
+      </div>
+      <div id="searchResults" class="results">
+        <h2>Результати пошуку</h2>
+        <p>Тут будуть відображатися результати...</p>
+      </div>
+    </header>
+    <main>
+      <section class="pricing-section" id="pricing">
+        <div class="section-container">
+          <header class="section-header">
+            <h2 class="section-title">Choose the plan that's right for you</h2>
+            <p class="section-text">
+              Join StreamVibe and select from our flexible subscription options
+              tailored to suit your viewing preferences.
+            </p>
+            <div class="plan-tabs">
+              <button class="tab-button active">Monthly</button>
+              <button class="tab-button">Yearly</button>
+            </div>
+          </header>
+
+          <div class="pricing-cards">
+            <article class="plan-card">
+              <h3 class="plan-title">Basic Plan</h3>
+              <p class="plan-text">
+                Enjoy an extensive library of movies and shows, featuring a
+                range of content, including recently released titles.
+              </p>
+              <div class="plan-price">$9.99 <span>/month</span></div>
+              <div class="plan-actions">
+                <button class="secondary-button">Start Free Trial</button>
+                <button class="primary-button">Choose Plan</button>
+              </div>
+            </article>
+
+            <article class="plan-card">
+              <h3 class="plan-title">Standard Plan</h3>
+              <p class="plan-text">
+                Access to a wider selection of movies and shows, including most
+                new releases and exclusive content.
+              </p>
+              <div class="plan-price">$12.99 <span>/month</span></div>
+              <div class="plan-actions">
+                <button class="secondary-button">Start Free Trial</button>
+                <button class="primary-button">Choose Plan</button>
+              </div>
+            </article>
+
+            <article class="plan-card">
+              <h3 class="plan-title">Premium Plan</h3>
+              <p class="plan-text">
+                Access to a wider selection of movies and shows, including most
+                new releases and exclusive content.
+              </p>
+              <div class="plan-price">$14.99 <span>/month</span></div>
+              <div class="plan-actions">
+                <button class="secondary-button">Start Free Trial</button>
+                <button class="primary-button">Choose Plan</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing-section" aria-labelledby="pricing-heading">
+        <header class="pricing-header">
+          <h2 id="pricing-heading">
+            Compare our plans and find the right one for you
+          </h2>
+          <p class="section-description">
+            StreamWise offers three different plans to fit your needs: Basic,
+            Standard, and Premium. Compare the features of each plan and choose
+            the one that's right for you.
+          </p>
+        </header>
+
+        <div class="pricing-table-container">
+          <table class="plans-comparison-table">
+            <caption class="visually-hidden">
+              Comparison of StreamWise subscription plans
+            </caption>
+            <thead>
+              <tr>
+                <th>Features</th>
+                <th>Basic<br />$9.99/mo</th>
+                <th>Standard<br />$12.99/mo</th>
+                <th>Premium<br />$14.99/mo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Content</th>
+                <td>
+                  Access to a wide selection of movies and shows, including some
+                  new releases
+                </td>
+                <td>
+                  Access to a wider selection including most new releases and
+                  exclusive content
+                </td>
+                <td>
+                  Widest selection including all new releases and Offline
+                  Viewing
+                </td>
+              </tr>
+              <tr>
+                <th>Devices</th>
+                <td>Watch on one device simultaneously</td>
+                <td>Watch on two devices simultaneously</td>
+                <td>Watch on four devices simultaneously</td>
+              </tr>
+              <tr>
+                <th>Free Trial</th>
+                <td>7 Days</td>
+                <td>7 Days</td>
+                <td>7 Days</td>
+              </tr>
+              <tr>
+                <th>Cancel Anytime</th>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <th>HDR</th>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <th>Dolby Atmos</th>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <th>Ad-Free</th>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <th>Offline Viewing</th>
+                <td>No</td>
+                <td>Selective titles</td>
+                <td>All titles</td>
+              </tr>
+              <tr>
+                <th>Family Sharing</th>
+                <td>No</td>
+                <td>Up to 5 members</td>
+                <td>Up to 6 members</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="cta-section">
+        <div class="cta-container">
+          <div class="cta-background">
+            <img src="../icons/back-ground-img1.svg" alt="" />
+            <img src="../icons/back-ground-img2.svg" alt="" />
+            <img src="../icons/back-ground-img3.svg" alt="" />
+            <img src="../icons/back-ground-img4.svg" alt="" />
+          </div>
+          <article class="cta-content">
+            <h2 class="cta-title">Start your free trial today!</h2>
+            <p class="cta-text">
+              This is a clear and concise call to action that encourages users
+              to sign up for a free trial of StreamVibe.
+            </p>
+          </article>
+          <button class="primary-button">Start a Free Trail</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <nav class="sub-container">
+          <h2 class="heading">Home</h2>
+          <ul class="links-container">
+            <li><a href="#" class="text-button">Categories</a></li>
+            <li><a href="#" class="text-button">Devices</a></li>
+            <li><a href="#" class="text-button">Pricing</a></li>
+            <li><a href="#" class="text-button">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <nav class="sub-container">
+          <h2 class="heading">Movies</h2>
+          <ul class="links-container">
+            <li><a href="#" class="text-button">Genres</a></li>
+            <li><a href="#" class="text-button">Trending</a></li>
+            <li><a href="#" class="text-button">New Release</a></li>
+            <li><a href="#" class="text-button">Popular</a></li>
+          </ul>
+        </nav>
+
+        <nav class="sub-container">
+          <h2 class="heading">Shows</h2>
+          <ul class="links-container">
+            <li><a href="#" class="text-button">Genres</a></li>
+            <li><a href="#" class="text-button">Trending</a></li>
+            <li><a href="#" class="text-button">New Release</a></li>
+            <li><a href="#" class="text-button">Popular</a></li>
+          </ul>
+        </nav>
+
+        <section class="sub-container">
+          <h2 class="heading">Support</h2>
+          <p><a href="#" class="text-button12">Contact Us</a></p>
+        </section>
+
+        <nav class="sub-container">
+          <h2 class="heading">Subscription</h2>
+          <ul class="links-container">
+            <li><a href="#" class="text-button">Plans</a></li>
+            <li><a href="#" class="text-button">Features</a></li>
+          </ul>
+        </nav>
+
+        <section class="sub-container">
+          <h2 class="heading">Connect With Us</h2>
+          <div class="buttons-container">
+            <a href="#"
+              ><img
+                class="button-icon"
+                alt="Facebook"
+                src="../icons/icon-facebook.svg"
+            /></a>
+            <a href="#"
+              ><img
+                class="button-icon"
+                alt="Twitter"
+                src="../icons/icon-twitter.svg"
+            /></a>
+            <a href="#"
+              ><img
+                class="button-icon"
+                alt="Linkedin"
+                src="../icons/icon-linkedin.svg"
+            /></a>
+          </div>
+        </section>
+      </div>
+
+      <div class="container1">
+        <hr class="line" />
+        <div class="container2">
+          <p class="text">@2023 StreamVib, All Rights Reserved</p>
+          <nav class="buttons-container1">
+            <a href="#" class="text">Terms of Use</a>
+            <span class="line1"></span>
+            <a href="#" class="text">Privacy Policy</a>
+            <span class="line1"></span>
+            <a href="#" class="text">Cookie Policy</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
