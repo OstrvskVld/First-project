@@ -21,10 +21,12 @@ body {
   font-family: Manrope;
 }
 .header .navbar .logo {
-  width: 12.438rem;
-  position: relative;
-  height: 3.75rem;
-  z-index: 0;
+  display: flex;
+  width: 199px;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  flex-shrink: 0;
 }
 .header .navbar .buttons-container {
   display: flex;
@@ -57,6 +59,13 @@ body {
   padding: 0.625rem 2.5rem 0.625rem 0.625rem;
   gap: 1.875rem;
   z-index: 2;
+  display: flex;
+  padding: 10px 40px 10px 10px;
+  align-items: center;
+  gap: 30px;
+  position: absolute;
+  left: 683px;
+  top: 22px;
 }
 .header .navbar .nav-list .list-item {
   list-style: none;
@@ -104,6 +113,22 @@ body {
   overflow: hidden;
   flex-shrink: 0;
   display: inline-block;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.buttons-container .search-button {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  border: 1px solid #262626;
+}
+.buttons-container .notification-button {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  border: 1px solid #262626;
 }
 
 .results h2,
