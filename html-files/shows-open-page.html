@@ -3,13 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css-files/home-page.css" />
+    <link rel="stylesheet" href="../css-files/shows-open-page.css" />
     <title>Show open Page</title>
   </head>
   <body>
     <header class="header">
-      <img class="logo" src="../icons/logo-icon.svg" alt="StreamVibe" />
       <nav class="navbar">
+        <img class="logo" src="../icons/logo-icon.svg" alt="StreamVibe" />
+        <div class="buttons-container">
+          <button class="search-button" type="submit">
+            <img
+              class="icon"
+              alt="icon-search"
+              src="../icons/icon-search.svg"
+            />
+          </button>
+          <button class="notification-button" type="submit">
+            <img
+              class="icon"
+              alt="icon-notification"
+              src="../icons/icon-notification.svg"
+            />
+          </button>
+        </div>
         <ul class="nav-list">
           <li class="list-item">
             <a href="../html-files/home-page.html">Home</a>
@@ -25,7 +41,7 @@
           </li>
         </ul>
       </nav>
-      <div class="search&notification">
+      <div class="search-notification">
         <form
           class="search-form"
           action="../html-files/search-page.html"
@@ -37,13 +53,7 @@
             placeholder="Search for movies, shows, and more..."
             name="search"
           />
-          <button class="search-button" type="submit">
-            <img alt="icon-search" src="../icons/icon-search.svg" />
-          </button>
         </form>
-        <button class="notification-button" type="submit">
-          <img alt="icon-notification" src="../icons/icon-notification.svg" />
-        </button>
       </div>
       <div class="results">
         <h2>Результати пошуку</h2>
@@ -519,7 +529,11 @@
 
         <article class="genres">
           <header class="genres-header">
-            <img class="icon" alt="Genres Icon" src="../icons/Icon-genres.svg" />
+            <img
+              class="icon"
+              alt="Genres Icon"
+              src="../icons/Icon-genres.svg"
+            />
             <h2 class="heading">Genres</h2>
           </header>
           <ul class="genre-list">
@@ -534,7 +548,11 @@
             <h2 class="name">Director</h2>
           </header>
           <figure class="director-info">
-            <img class="image-icon" alt="Director Image" src="../icons/Image--dir.png" />
+            <img
+              class="image-icon"
+              alt="Director Image"
+              src="../icons/Image--dir.png"
+            />
             <figcaption>
               <p class="name">The Duffer Brothers</p>
               <p class="origin">From USA</p>
@@ -547,7 +565,11 @@
             <h2 class="name">Music</h2>
           </header>
           <figure class="music-info">
-            <img class="image-icon" alt="Composer Image" src="../icons/Image--Kyle.png" />
+            <img
+              class="image-icon"
+              alt="Composer Image"
+              src="../icons/Image--Kyle.png"
+            />
             <figcaption>
               <p class="name">Kyle Dixon</p>
               <p class="origin">From USA</p>
@@ -558,10 +580,32 @@
       <section class="cta-section">
         <div class="cta-container">
           <div class="cta-background">
-            <img src="../icons/back-ground-img1.svg" alt="Background Image 1" />
-            <img src="../icons/back-ground-img2.svg" alt="Background Image 2" />
-            <img src="../icons/back-ground-img3.svg" alt="Background Image 3" />
-            <img src="../icons/back-ground-img4.svg" alt="Background Image 4" />
+            <div class="image-container">
+              <img
+                src="../icons/back-ground-img1.svg"
+                alt="Background Image 1"
+              />
+            </div>
+            <div class="image-container2">
+              <img
+                src="../icons/back-ground-img2.svg"
+                alt="Background Image 2"
+              />
+            </div>
+            <div class="image-container3">
+              <img
+                src="../icons/back-ground-img3.svg"
+                alt="Background Image 3"
+              />
+            </div>
+            <div class="image-container4">
+              <img
+                src="../icons/back-ground-img4.svg"
+                alt="Background Image 4"
+              />
+            </div>
+
+            <div class="fade-out-left"></div>
           </div>
           <article class="cta-content">
             <h2 class="cta-title">Start your free trial today!</h2>
@@ -608,7 +652,9 @@
 
         <section class="sub-container">
           <h2 class="heading">Support</h2>
-          <p><a href="#" class="text-button12">Contact Us</a></p>
+          <ul class="links-container">
+            <li><a href="#" class="text-button">Contact Us</a></li>
+          </ul>
         </section>
 
         <nav class="sub-container">
@@ -647,13 +693,11 @@
       <div class="container1">
         <hr class="line" />
         <div class="container2">
-          <p class="text">@2023 StreamVib, All Rights Reserved</p>
+          <p class="text1">@2023 StreamVib, All Rights Reserved</p>
           <nav class="buttons-container1">
-            <a href="#" class="text">Terms of Use</a>
+            <a href="#" class="text2">Terms of Use</a>
             <span class="line1"></span>
-            <a href="#" class="text">Privacy Policy</a>
-            <span class="line1"></span>
-            <a href="#" class="text">Cookie Policy</a>
+            <a href="#" class="text2">Privacy Policy</a>
           </nav>
         </div>
       </div>
