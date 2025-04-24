@@ -64,82 +64,96 @@
       <section class="support-section">
         <header class="support-header">
           <div class="support-title">
-            <h1 id="contact-heading" class="support-heading">
-              Welcome to our support page!
-            </h1>
+            <h1 class="support-heading">Welcome to our support page!</h1>
             <p class="support-description">
               We're here to help you with any problems you may be having with
               our product.
             </p>
           </div>
-          <figure class="images">
-            <img src="../icons/Image%20Container.svg" alt="Support Image 1" />
-            <img src="../icons/Image%20Container-1.svg" alt="Support Image 2" />
-            <img src="../icons/Image%20Container-2.svg" alt="Support Image 3" />
-            <img src="../icons/Image%20Container-3.svg" alt="Support Image 4" />
-          </figure>
+          <div class="container-images">
+            <figure class="images-container">
+              <img src="../icons/Image%20Container.svg" alt="Support Image 1" />
+              <img
+                src="../icons/Image%20Container-1.svg"
+                alt="Support Image 2"
+              />
+              <img
+                src="../icons/Image%20Container-2.svg"
+                alt="Support Image 3"
+              />
+              <img
+                src="../icons/Image%20Container-3.svg"
+                alt="Support Image 4"
+              />
+            </figure>
+          </div>
         </header>
 
         <aside class="support-form">
-          <form id="support-form" method="POST">
+          <form method="POST">
             <fieldset class="form-fieldset">
-              <legend>Personal Information</legend>
-              <label for="first-name">First Name</label>
-              <input
-                type="text"
-                id="first-name"
-                name="first-name"
-                placeholder="Enter First Name"
-                required
-              />
-
-              <label for="last-name">Last Name</label>
-              <input
-                type="text"
-                id="last-name"
-                name="last-name"
-                placeholder="Enter Last Name"
-                required
-              />
-            </fieldset>
-
-            <fieldset class="form-fieldset">
-              <legend>Contact Information</legend>
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter Your Email"
-                required
-              />
-
-              <label for="phone" class="phone-label">Phone Number</label>
-              <div class="phone-group">
-                <label for="country-code">Country Code</label>
-                <select
-                  class="country-select"
-                  id="country-code"
-                  name="country-code"
-                >
-                  <option value="+1">India (+1)</option>
-                  <option value="+380">Ukraine (+380)</option>
-                </select>
+              <div class="form-header">
+                <label for="first-name" class="heading-form">First Name</label>
                 <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  class="phone-input"
-                  placeholder="Enter Phone Number"
-                  pattern="[0-9]{10}"
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  placeholder="Enter First Name"
+                  required
+                />
+              </div>
+              <div class="form-header">
+                <label for="last-name" class="heading-form">Last Name</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  placeholder="Enter Last Name"
                   required
                 />
               </div>
             </fieldset>
 
             <fieldset class="form-fieldset">
-              <legend>Message</legend>
-              <label for="message">Your Message</label>
+              <div class="form-header">
+                <label for="email" class="heading-form">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter Your Email"
+                  required
+                />
+              </div>
+              <div class="form-header">
+                <label for="phone" class="heading-form">Phone Number</label>
+                <div class="phone-group">
+                  <label for="country-code">Country Code</label>
+                  <select
+                    class="country-select"
+                    id="country-code"
+                    name="country-code"
+                    class="country-code"
+                  >
+                    <option value="+1">India (+1)</option>
+                    <option value="+380">Ukraine (+380)</option>
+                  </select>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="phone-input"
+                    placeholder="Enter Phone Number"
+                    pattern="[0-9]{10}"
+                    required
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-fieldset">
+              
+              <label for="message" class="heading-Message">Message</label>
               <textarea
                 id="message"
                 name="message"
@@ -150,7 +164,7 @@
 
             <div class="form-actions">
               <label class="terms-checkbox">
-                <input type="checkbox" required />
+                <input type="checkbox" required class="input" />
                 I agree with Terms of Use and Privacy Policy
               </label>
               <button type="submit" class="submit-button">Send Message</button>
@@ -161,9 +175,7 @@
       <section class="faq">
         <div class="faq__header">
           <div class="faq__intro">
-            <h2 id="faq-heading" class="faq__title">
-              Frequently Asked Questions
-            </h2>
+            <h2 class="faq__title">Frequently Asked Questions</h2>
             <p class="faq__description">
               Got questions? We've got answers! Check out our FAQ section to
               find answers to the most common questions about StreamVibe.
@@ -174,7 +186,7 @@
 
         <div class="faq__container">
           <div class="faq__column">
-            <article class="faq__item faq__item--open">
+            <article class="faq__item--open">
               <div class="faq__question">
                 <span class="faq__number">01</span>
                 <h3 class="faq__question-text">What is StreamVibe?</h3>
