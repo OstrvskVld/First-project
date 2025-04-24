@@ -61,66 +61,95 @@
       </div>
     </header>
     <main>
-      <section class="pricing-section">
-        <div class="pricing-container">
-          <header class="pricing-header">
-            <h2 class="pricing-title">Choose the plan that's right for you</h2>
-            <p class="pricing-description">
+      <section class="pricing">
+        <div class="pricing__header">
+          <div class="pricing__intro">
+            <h2 class="pricing__title">Choose the plan that's right for you</h2>
+            <p class="pricing__description">
               Join StreamVibe and select from our flexible subscription options
-              tailored to suit your viewing preferences.
+              tailored to suit your viewing preferences. Get ready for non-stop
+              entertainment!
             </p>
-            <div class="pricing-tabs">
-              <button class="tab monthly-tab active">Monthly</button>
-              <button class="tab yearly-tab">Yearly</button>
-            </div>
-          </header>
+          </div>
 
-          <div class="plans-container">
-            <article class="plan basic-plan">
-              <h3 class="plan-title">Basic Plan</h3>
-              <p class="plan-description">
+          <div class="pricing__toggle">
+            <button class="pricing__toggle-btn-active">Monthly</button>
+            <button class="pricing__toggle-btn">Yearly</button>
+          </div>
+        </div>
+
+        <div class="pricing__plans">
+          <article class="pricing-card">
+            <header class="pricing-card__header">
+              <h3 class="pricing-card__title">Basic Plan</h3>
+              <p class="pricing-card__description">
                 Enjoy an extensive library of movies and shows, featuring a
                 range of content, including recently released titles.
               </p>
-              <div class="plan-price">$9.99 <span>/month</span></div>
-              <div class="plan-buttons">
-                <button class="trial-button">Start Free Trial</button>
-                <button class="select-button">Choose Plan</button>
-              </div>
-            </article>
+            </header>
 
-            <article class="plan standard-plan">
-              <h3 class="plan-title">Standard Plan</h3>
-              <p class="plan-description">
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount">$9.99</span>
+              <span class="pricing-card__period">/month</span>
+            </div>
+
+            <div class="pricing-card__actions">
+              <button class="pricing-card__btn--secondary">
+                Start Free Trial
+              </button>
+              <button class="pricing-card__btn--primary">Choose Plan</button>
+            </div>
+          </article>
+
+          <article class="pricing-card">
+            <header class="pricing-card__header">
+              <h3 class="pricing-card__title">Standard Plan</h3>
+              <p class="pricing-card__description">
                 Access to a wider selection of movies and shows, including most
                 new releases and exclusive content.
               </p>
-              <div class="plan-price">$12.99 <span>/month</span></div>
-              <div class="plan-buttons">
-                <button class="trial-button">Start Free Trial</button>
-                <button class="select-button">Choose Plan</button>
-              </div>
-            </article>
+            </header>
 
-            <article class="plan premium-plan">
-              <h3 class="plan-title">Premium Plan</h3>
-              <p class="plan-description">
-                Access to a wider selection of movies and shows, including most
-                new releases and exclusive content.
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount">$12.99</span>
+              <span class="pricing-card__period">/month</span>
+            </div>
+
+            <div class="pricing-card__actions">
+              <button class="pricing-card__btn--secondary">
+                Start Free Trial
+              </button>
+              <button class="pricing-card__btn--primary">Choose Plan</button>
+            </div>
+          </article>
+
+          <article class="pricing-card">
+            <header class="pricing-card__header">
+              <h3 class="pricing-card__title">Premium Plan</h3>
+              <p class="pricing-card__description">
+                Access to a widest selection of movies and shows, including all
+                new releases and Offline Viewing.
               </p>
-              <div class="plan-price">$14.99 <span>/month</span></div>
-              <div class="plan-buttons">
-                <button class="trial-button">Start Free Trial</button>
-                <button class="select-button">Choose Plan</button>
-              </div>
-            </article>
-          </div>
+            </header>
+
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount">$14.99</span>
+              <span class="pricing-card__period">/month</span>
+            </div>
+
+            <div class="pricing-card__actions">
+              <button class="pricing-card__btn--secondary">
+                Start Free Trial
+              </button>
+              <button class="pricing-card__btn--primary">Choose Plan</button>
+            </div>
+          </article>
         </div>
       </section>
 
       <section class="comparison-section">
         <header class="comparison-header">
-          <h2 id="comparison-title">
+          <h2 class="comparison-header__title">
             Compare our plans and find the right one for you
           </h2>
           <p class="comparison-description">
@@ -135,7 +164,7 @@
             <caption class="visually-hidden">
               Comparison of StreamWise subscription plans
             </caption>
-            <thead>
+            <thead class>
               <tr>
                 <th>Features</th>
                 <th>Basic<br />$9.99/mo</th>
