@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 body {
   background: var(--Black-08, #141414);
-  font-family: Arial, sans-serif;
+  font-family: Manrope, sans-serif;
   margin: 0;
   padding: 20px;
   width: 120rem;
   height: 207.75rem;
+  overflow-x: hidden;
 }
 
 .header .navbar {
@@ -307,7 +309,7 @@ body {
 .container-left-cast .sub-container-left-cast .heading-left-cast {
   flex: 1 0 0;
   color: #999;
-  font-family: Archivo;
+  font-family: Manrope;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 500;

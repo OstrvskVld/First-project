@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 body {
   background-color: #613737;
-  font-family: Arial, sans-serif;
+  font-family: Manrope, sans-serif;
   margin: 0;
   padding: 20px;
+  overflow-x: hidden;
 }
 
 .header {
@@ -352,32 +354,38 @@ footer {
     color: #fff;
     font-family: Manrope;
     .pricing__toggle {
-      border-radius: 10px;
-      background-color: #0f0f0f;
-      border: 1px solid #262626;
       display: flex;
-      flex-direction: row;
+      padding: 10px;
       align-items: center;
-      justify-content: flex-start;
-      padding: 0.625rem;
-      font-size: 1.125rem;
+
       .pricing__toggle-btn {
-        border-radius: 100px;
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        padding: 14px 24px;
         justify-content: center;
-        padding: 0.875rem 1.5rem;
-        color: #999;
+        align-items: center;
+        gap: 10px;
+        border-radius: 100px;
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
       }
       .pricing__toggle-btn-active {
-        border-radius: 10px;
-        background-color: #1f1f1f;
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        padding: 14px 24px;
         justify-content: center;
-        padding: 0.875rem 1.5rem;
+        align-items: center;
+        gap: 10px;
+        border-radius: 10px;
+        background: var(--Black-12, #1f1f1f);
+        color: var(--Absolute-White, #fff);
+        font-family: Manrope;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
       }
     }
     .pricing__intro {
@@ -472,33 +480,42 @@ footer {
 }
 
 .pricing-card__actions {
-  align-self: stretch;
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
-  gap: 1.25rem;
-  font-size: 1.125rem;
+  gap: 20px;
+  align-self: stretch;
   .pricing-card__btn--primary {
-    flex: 1;
-    border-radius: 8px;
-    background-color: #e50000;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    padding: 18px 24px;
     justify-content: center;
-    padding: 1.125rem 1.5rem;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 8px;
+    background: var(--Red-45, #e50000);
+    color: var(--Absolute-White, #fff);
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
   }
   .pricing-card__btn--secondary {
-    flex: 1;
-    border-radius: 8px;
-    background-color: #141414;
-    border: 1px solid #262626;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    padding: 18px 24px;
     justify-content: center;
-    padding: 1.125rem 1.5rem;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 8px;
+    border: 1px solid var(--Black-15, #262626);
+    background: var(--Black-08, #141414);
+    color: var(--Absolute-White, #fff);
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
   }
 }
 
@@ -569,50 +586,43 @@ footer {
 
 .comparison-section {
   display: flex;
-  width: 100%;
-  max-width: 1200px;
+  width: 1597px;
   flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-  gap: 3rem;
+  align-items: flex-end;
+  gap: 80px;
 
   .comparison-header {
     display: flex;
+    padding-right: 300px;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1.5rem;
-
-    &__title {
+    align-items: flex-start;
+    gap: 14px;
+    align-self: stretch;
+    .comparison-header__title {
+      align-self: stretch;
       color: var(--Absolute-White, #fff);
       font-family: Manrope;
-      font-size: 2.8rem;
+      font-size: 48px;
+      font-style: normal;
       font-weight: 700;
-      line-height: 1.4;
-      background: linear-gradient(90deg, #ff6b6b, #ffcd4f);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      line-height: 150%;
     }
-
-    .comparison-description {
-      color: var(--Grey-60, #999);
-      font-family: Manrope;
-      font-size: 1.25rem;
-      font-weight: 400;
-      line-height: 1.6;
-      max-width: 800px;
-    }
+  }
+  .comparison-description {
+    align-self: stretch;
+    color: var(--Grey-60, #999);
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
   }
 
   .comparison-table-container {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    border-radius: 16px;
-    border: 1px solid var(--Black-15, #262626);
-    background-color: var(--Black-10, #1a1a1a);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
     overflow: hidden;
+    background-color: var(--Black-15, #262626);
 
     .comparison-table {
       width: 100%;
@@ -621,35 +631,62 @@ footer {
 
       th,
       td {
-        border: 1px solid var(--Black-15, #262626);
-        padding: 1.2rem;
+        padding: 1rem;
         font-family: Manrope;
-        font-size: 1.1rem;
+        font-size: 1rem;
         color: var(--Absolute-White, #fff);
-        text-align: center;
+        border: 1px solid var(--Black-20, #333);
       }
 
-      th {
-        background: linear-gradient(90deg, #1a73e8, #ff6b6b);
+      .comparison-table__header > th {
+        border-bottom: 1px solid var(--Black-15, #262626);
+        background: var(--Black-06, #0f0f0f);
         font-weight: 700;
-        font-size: 1.2rem;
         text-transform: uppercase;
-        color: #fff;
       }
 
       td {
-        background-color: var(--Black-10, #1a1a1a);
         font-weight: 400;
-        transition: background-color 0.3s ease-in-out;
       }
 
-      tbody tr:nth-child(odd) td {
-        background-color: var(--Black-15, #262626);
+      .text-container-btn {
+        display: flex;
+        padding: 30px;
+        align-items: center;
+        gap: 8px;
+        flex: 1 0 0;
+        border-left: 1px solid var(--Black-15, #262626);
+
+        .text1 {
+          font-size: 1.2rem;
+          font-weight: 600;
+          margin-bottom: 0.5rem;
+        }
+
+        .text-container2 {
+          background-color: var(--Red-45, #e50000);
+          border-radius: 5px;
+          padding: 0.3rem 0.5rem;
+
+          .text2 {
+            font-size: 0.85rem;
+            font-weight: 500;
+          }
+        }
       }
 
-      tbody tr:hover td {
-        background-color: #2c2c2c;
-        color: #ffd700;
+      .text-container-th-header {
+        font-size: 1.1rem;
+        text-align: center;
+      }
+
+      .text-container-th {
+        font-weight: 600;
+        text-align: left;
+      }
+
+      .text-container-td {
+        text-align: left;
       }
     }
   }

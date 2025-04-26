@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 body {
   background: var(--Black-08, #141414);
-  font-family: Arial, sans-serif;
+  font-family: Manrope, sans-serif;
   margin: 0;
   padding: 20px;
   width: 1920px;
   height: 8955px;
+  overflow-x: hidden;
 }
 
 .header .navbar {
@@ -553,10 +555,12 @@ body {
 }
 .device-card .device-description {
   align-self: stretch;
-  position: relative;
-  font-size: 1.125rem;
+  color: var(--Grey-60, #999);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 150%;
-  color: #999;
 }
 
 .device-card-header {
@@ -567,10 +571,13 @@ body {
   color: #999;
 }
 .device-card-header .device-name {
-  flex: 1;
-  position: relative;
-  line-height: 150%;
+  flex: 1 0 0;
+  color: #fff;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
   font-weight: 600;
+  line-height: 150%;
 }
 .device-card-header .device-icon {
   width: 4.5rem;
@@ -606,14 +613,18 @@ body {
   font-family: Manrope;
 }
 .faq__header .faq__ask-button {
-  border-radius: 8px;
-  background-color: #e50000;
   display: flex;
-  flex-direction: row;
+  padding: 18px 24px;
   align-items: flex-start;
-  justify-content: flex-start;
-  padding: 1.125rem 1.5rem;
-  font-size: 1.125rem;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(--Red-45, #e50000);
+  color: var(--Absolute-White, #fff);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
 }
 .faq__header .faq__intro {
   flex: 1;
@@ -756,33 +767,38 @@ body {
   font-family: Manrope;
 }
 .pricing .pricing__header .pricing__toggle {
-  border-radius: 10px;
-  background-color: #0f0f0f;
-  border: 1px solid #262626;
   display: flex;
-  flex-direction: row;
+  padding: 10px;
   align-items: center;
-  justify-content: flex-start;
-  padding: 0.625rem;
-  font-size: 1.125rem;
 }
 .pricing .pricing__header .pricing__toggle .pricing__toggle-btn {
-  border-radius: 100px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  padding: 14px 24px;
   justify-content: center;
-  padding: 0.875rem 1.5rem;
-  color: #999;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  color: var(--Grey-60, #999);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
 }
 .pricing .pricing__header .pricing__toggle .pricing__toggle-btn-active {
-  border-radius: 10px;
-  background-color: #1f1f1f;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  padding: 14px 24px;
   justify-content: center;
-  padding: 0.875rem 1.5rem;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--Black-12, #1f1f1f);
+  color: var(--Absolute-White, #fff);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
 }
 .pricing .pricing__header .pricing__intro {
   align-self: stretch;
@@ -874,34 +890,43 @@ body {
 }
 
 .pricing-card__actions {
-  align-self: stretch;
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
-  gap: 1.25rem;
-  font-size: 1.125rem;
+  gap: 20px;
+  align-self: stretch;
 }
 .pricing-card__actions .pricing-card__btn--primary {
-  flex: 1;
-  border-radius: 8px;
-  background-color: #e50000;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  padding: 18px 24px;
   justify-content: center;
-  padding: 1.125rem 1.5rem;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  background: var(--Red-45, #e50000);
+  color: var(--Absolute-White, #fff);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
 }
 .pricing-card__actions .pricing-card__btn--secondary {
-  flex: 1;
-  border-radius: 8px;
-  background-color: #141414;
-  border: 1px solid #262626;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  padding: 18px 24px;
   justify-content: center;
-  padding: 1.125rem 1.5rem;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  border: 1px solid var(--Black-15, #262626);
+  background: var(--Black-08, #141414);
+  color: var(--Absolute-White, #fff);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
 }
 
 .cta-container {
