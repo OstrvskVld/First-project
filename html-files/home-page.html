@@ -11,60 +11,57 @@
     <header class="header">
       <nav class="navbar">
         <img class="logo" src="../icons/logo-icon.svg" alt="StreamVibe" />
-        <div class="buttons-container">
-          <button class="search-button" type="submit">
-            <img
-              class="icon"
-              alt="icon-search"
-              src="../icons/icon-search.svg"
-            />
+
+        <div class="nav-list">
+          <button class="home" type="submit">
+            <p class="home-text">Home</p>
           </button>
-          <button class="notification-button" type="submit">
-            <img
-              class="icon"
-              alt="icon-notification"
-              src="../icons/icon-notification.svg"
-            />
-          </button>
+
+          <a href="../html-files/movies-shows-page.html" class="href-text"
+            >Movies&Shows</a
+          >
+
+          <a href="../html-files/support-page.html" class="href-text"
+            >Support</a
+          >
+
+          <a href="../html-files/subscription-page.html" class="href-text"
+            >Subscriptions</a
+          >
         </div>
-        <ul class="nav-list">
-          <li class="list-item">
-            <a href="../html-files/home-page.html">Home</a>
-          </li>
-          <li class="list-item">
-            <a href="../html-files/movies-shows-page.html">Movies&Shows</a>
-          </li>
-          <li class="list-item">
-            <a href="../html-files/support-page.html">Support</a>
-          </li>
-          <li class="list-item">
-            <a href="../html-files/subscription-page.html">Subscriptions</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="search-notification">
-        <form
-          class="search-form"
-          action="../html-files/search-page.html"
-          method="get"
-        >
-          <input
-            class="search-input"
-            type="text"
-            placeholder="Search for movies, shows, and more..."
-            name="search"
+        <div class="buttons-container">
+          <img class="icon" alt="icon-search" src="../icons/icon-search.svg" />
+
+          <img
+            class="icon"
+            alt="icon-notification"
+            src="../icons/icon-notification.svg"
           />
-        </form>
-      </div>
-      <div class="results">
-        <h2>Результати пошуку</h2>
-        <p>Тут будуть відображатися результати...</p>
-      </div>
+        </div>
+        <div class="search-notification">
+          <form
+            class="search-form"
+            action="../html-files/search-page.html"
+            method="get"
+          >
+            <input
+              class="search-input"
+              type="text"
+              placeholder="Search for movies, shows, and more..."
+              name="search"
+            />
+          </form>
+        </div>
+        <div class="results">
+          <h2>Результати пошуку</h2>
+          <p>Тут будуть відображатися результати...</p>
+        </div>
+      </nav>
     </header>
     <main class="main-content">
       <section class="film-intro-section">
         <div class="suggestion-films">
-          <figure class="film-card-row-1">
+          <figure class="film-card-row">
             <img class="film-image" src="../icons/Image.svg" alt="Film 1" />
             <img class="film-image" src="../icons/Image-1.svg" alt="Film 2" />
             <img class="film-image" src="../icons/Image-2.svg" alt="Film 3" />
@@ -75,7 +72,7 @@
             <img class="film-image" src="../icons/Image-7.svg" alt="Film 8" />
             <img class="film-image" src="../icons/Image-8.svg" alt="Film 9" />
           </figure>
-          <figure class="film-card-row-2">
+          <figure class="film-card-row">
             <img class="film-image" src="../icons/Image-9.svg" alt="Film 10" />
             <img class="film-image" src="../icons/Image-10.svg" alt="Film 11" />
             <img class="film-image" src="../icons/Image-11.svg" alt="Film 12" />
@@ -86,7 +83,7 @@
             <img class="film-image" src="../icons/Image-16.svg" alt="Film 17" />
             <img class="film-image" src="../icons/Image-17.svg" alt="Film 18" />
           </figure>
-          <figure class="film-card-row-3">
+          <figure class="film-card-row">
             <img class="film-image" src="../icons/Image-18.svg" alt="Film 19" />
             <img class="film-image" src="../icons/Image-19.svg" alt="Film 20" />
             <img class="film-image" src="../icons/Image-20.svg" alt="Film 21" />
@@ -97,7 +94,7 @@
             <img class="film-image" src="../icons/Image-25.svg" alt="Film 26" />
             <img class="film-image" src="../icons/Image-26.svg" alt="Film 27" />
           </figure>
-          <figure class="film-card-row-4">
+          <figure class="film-card-row">
             <img class="film-image" src="../icons/Image-27.svg" alt="Film 28" />
             <img class="film-image" src="../icons/Image-28.svg" alt="Film 29" />
             <img class="film-image" src="../icons/Image-29.svg" alt="Film 30" />
@@ -110,14 +107,15 @@
           </figure>
           <div class="abstract-design-container">
             <img
-              class="film-image"
+              class="film-image-abstract"
               src="../icons/abstract-design-icon.svg"
               alt="abstract-design-icon"
             />
           </div>
+
+          <div class="fade-out-top"></div>
+          <div class="fade-out-bottom"></div>
         </div>
-        <div class="fade-out-top"></div>
-        <div class="fade-out-bottom"></div>
       </section>
       <section class="streaming-promo">
         <div class="sub-container">
@@ -502,9 +500,9 @@
             <article class="faq__item--open">
               <div class="faq__question">
                 <span class="faq__number">01</span>
-                <h3 class="faq__question-text">What is StreamVibe?</h3>
               </div>
               <div class="faq__answer">
+                <h3 class="faq__question-text">What is StreamVibe?</h3>
                 <p>
                   StreamVibe is a streaming service that allows you to watch
                   movies and shows on demand.
@@ -522,10 +520,8 @@
             <article class="faq__item">
               <div class="faq__question">
                 <span class="faq__number">02</span>
-                <h3 class="faq__question-text">
-                  How much does StreamVibe cost?
-                </h3>
               </div>
+              <h3 class="faq__question-text">How much does StreamVibe cost?</h3>
               <img
                 class="faq__icon"
                 src="../icons/icon-plus.svg"
@@ -538,10 +534,10 @@
             <article class="faq__item">
               <div class="faq__question">
                 <span class="faq__number">03</span>
-                <h3 class="faq__question-text">
-                  What content is available on StreamVibe?
-                </h3>
               </div>
+              <h3 class="faq__question-text">
+                What content is available on StreamVibe?
+              </h3>
               <img
                 class="faq__icon"
                 src="../icons/icon-plus.svg"
@@ -554,8 +550,8 @@
             <article class="faq__item">
               <div class="faq__question">
                 <span class="faq__number">04</span>
-                <h3 class="faq__question-text">How can I watch StreamVibe?</h3>
               </div>
+              <h3 class="faq__question-text">How can I watch StreamVibe?</h3>
               <img
                 class="faq__icon"
                 src="../icons/icon-plus.svg"
@@ -568,10 +564,10 @@
             <article class="faq__item">
               <div class="faq__question">
                 <span class="faq__number">05</span>
-                <h3 class="faq__question-text">
-                  How do I sign up for StreamVibe?
-                </h3>
               </div>
+              <h3 class="faq__question-text">
+                How do I sign up for StreamVibe?
+              </h3>
               <img
                 class="faq__icon"
                 src="../icons/icon-plus.svg"
@@ -584,10 +580,10 @@
             <article class="faq__item">
               <div class="faq__question">
                 <span class="faq__number">06</span>
-                <h3 class="faq__question-text">
-                  What is the StreamVibe free trial?
-                </h3>
               </div>
+              <h3 class="faq__question-text">
+                What is the StreamVibe free trial?
+              </h3>
               <img
                 class="faq__icon"
                 src="../icons/icon-plus.svg"
@@ -600,10 +596,10 @@
             <article class="faq__item">
               <div class="faq__question">
                 <span class="faq__number">07</span>
-                <h3 class="faq__question-text">
-                  How do I contact StreamVibe customer support?
-                </h3>
               </div>
+              <h3 class="faq__question-text">
+                How do I contact StreamVibe customer support?
+              </h3>
               <img
                 class="faq__icon"
                 src="../icons/icon-plus.svg"
@@ -616,10 +612,10 @@
             <article class="faq__item">
               <div class="faq__question">
                 <span class="faq__number">08</span>
-                <h3 class="faq__question-text">
-                  What are the StreamVibe payment methods?
-                </h3>
               </div>
+              <h3 class="faq__question-text">
+                What are the StreamVibe payment methods?
+              </h3>
               <img
                 class="faq__icon"
                 src="../icons/icon-plus.svg"
@@ -723,19 +719,19 @@
                 alt="Background Image 1"
               />
             </div>
-            <div class="image-container2">
+            <div class="image-container">
               <img
                 src="../icons/back-ground-img2.svg"
                 alt="Background Image 2"
               />
             </div>
-            <div class="image-container3">
+            <div class="image-container">
               <img
                 src="../icons/back-ground-img3.svg"
                 alt="Background Image 3"
               />
             </div>
-            <div class="image-container4">
+            <div class="image-container">
               <img
                 src="../icons/back-ground-img4.svg"
                 alt="Background Image 4"
