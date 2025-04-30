@@ -810,3 +810,405 @@ footer {
     }
   }
 }
+
+@media (max-width: 1440px) {
+  body {
+    width: 1440px;
+    overflow-x: hidden;
+    padding: 0;
+  }
+
+  .header {
+    width: 1440px;
+    box-sizing: border-box;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .navbar {
+    box-sizing: border-box;
+    display: flex;
+    width: 1439px;
+    padding: 24px 80px;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-list {
+      position: static;
+      width: 412px;
+      height: 61px;
+      padding: 8px 30px 8px 8px;
+      gap: 16px;
+      border-radius: 10px;
+      border: 3px solid var(--Black-12, #1f1f1f);
+      background: var(--Black-06, #0f0f0f);
+
+      .href-text {
+        width: 104px;
+        height: 21px;
+        color: var(--Grey-75, #bfbfbf);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+      }
+
+      .home {
+        width: 79px;
+        height: 45px;
+        border-radius: 8px;
+        display: flex;
+        padding: 12px 20px;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid var(--Black-10, #1a1a1a);
+        background: var(--Black-10, #1a1a1a);
+
+        .home-text {
+          color: #fff;
+          font-family: Manrope;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%;
+          width: 39px;
+          height: 21px;
+        }
+      }
+    }
+
+    .buttons-container {
+      gap: 14px;
+      width: 62px;
+      height: 24px;
+      margin-right: 0;
+
+      .icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .search-notification {
+      display: none;
+    }
+
+    .logo {
+      width: 113.333px;
+      height: 16.667px;
+      flex-shrink: 0;
+    }
+  }
+  .movie-hero {
+    display: flex;
+    width: 1440px;
+    margin-top: 100px;
+    padding: 0;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 1px solid #262626;
+    background: linear-gradient(0deg, #141414 0%, rgba(20, 20, 20, 0) 100%),
+      url("../icons/avenger.png") lightgray 50% / cover no-repeat;
+    .movie-hero__navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-self: stretch;
+      border-radius: 12px;
+      padding-left: 40px;
+      padding-right: 40px;
+      .movie-hero__pagination {
+        display: flex;
+        width: 81px;
+        align-items: flex-start;
+        gap: 3px;
+      }
+      .movie-hero__nav-btn {
+        display: flex;
+        padding: 12px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 8px;
+        border: 1px solid var(--Black-12, #1f1f1f);
+        background: var(--Black-06, #0f0f0f);
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+    .movie-hero__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 24px;
+      align-self: stretch;
+      .movie-hero__info {
+        .movie-hero__actions {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          .movie-hero__secondary-actions {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            .movie-hero__action-btn {
+              display: flex;
+              padding: 12px;
+              align-items: flex-start;
+              gap: 10px;
+              border-radius: 8px;
+              border: 1px solid var(--Black-15, #262626);
+              background: var(--Black-06, #0f0f0f);
+              img {
+                width: 24px;
+                height: 24px;
+              }
+            }
+          }
+          .movie-hero__play-btn {
+            display: flex;
+            padding: 14px 20px;
+            align-items: center;
+            gap: 4px;
+            border-radius: 8px;
+            background: var(--Red-45, #e50000);
+            img {
+              width: 24px;
+              height: 24px;
+            }
+            .movie-hero__play-text {
+              color: var(--Absolute-White, #fff);
+              font-family: Manrope;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 153%;
+            }
+          }
+        }
+        .movie-hero-text {
+          display: flex;
+          padding: 0px 120px;
+          flex-direction: column;
+          align-items: center;
+          gap: 2px;
+          align-self: stretch;
+          .movie-hero__description {
+            color: var(--Grey-60, #999);
+            text-align: center;
+            font-family: Manrope;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+          }
+          .movie-hero__title {
+            color: var(--Absolute-White, #fff);
+            text-align: center;
+            font-family: Manrope;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%;
+          }
+        }
+      }
+    }
+  }
+  .movie-hero-movies-container {
+    display: flex;
+    width: 1280px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: -22px;
+    margin-top: 100px;
+    .main-container {
+      display: flex;
+      padding: 40px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 80px;
+      align-self: stretch;
+      border-radius: 12px;
+      border: 1px solid var(--Black-15, #262626);
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        align-self: stretch;
+        .sub-container1 {
+          display: flex;
+          align-items: flex-start;
+          gap: 20-px;
+          align-self: stretch;
+          width: 1200px;
+          
+          .active {
+            .card {
+              display: flex;
+              padding: 5px;
+              flex-direction: column;
+              align-items: flex-start;
+              flex: 1 0 0;
+              border-radius: 10px;
+              border: 1px solid var(--Black-15, #262626);
+              background: var(--Black-10, #1a1a1a);
+              width: 224px;
+              .container1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+                align-self: stretch;
+                .fade-out-bottom {
+                  width: 193px;
+                  height: 210px;
+                  position: absolute;
+                  left: -9px;
+                  top: -23px;
+                  background: linear-gradient(
+                    180deg,
+                    rgba(26, 26, 26, 0) 0%,
+                    #1a1a1a 101.79%
+                  );
+                }
+                .image-container {
+                  display: flex;
+                  align-items: flex-start;
+                  gap: 5px;
+                  flex: 1 0 0;
+                  align-self: stretch;
+                  img {
+                    width: 86px;
+                    height: 91px;
+                  }
+                }
+                .image-container1 {
+                  display: flex;
+                  align-items: flex-start;
+                  gap: 5px;
+                  flex: 1 0 0;
+                  align-self: stretch;
+                  img {
+                    width: 86px;
+                    height: 91px;
+                  }
+                }
+              }
+              .container2 {
+                display: flex;
+                align-items: center;
+                align-self: stretch;
+                width: 176px;
+                height: 24px;
+                padding: 0;
+                box-sizing: border-box;
+                margin: 24px;
+                
+                .heading1 {
+                  color: var(--Absolute-White, #fff);
+                  font-family: Manrope;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: 150%;
+                }
+                img {
+                  width: 24px;
+                  height: 24px;
+                }
+              }
+            }
+          }
+        }
+        .sub-container {
+          display: flex;
+          align-items: center;
+          gap: 100px;
+          align-self: stretch;
+          .buttons-container {
+            display: flex;
+            padding: 12px;
+            align-items: center;
+            gap: 12px;
+            border-radius: 10px;
+            border: 1px solid var(--Black-12, #1f1f1f);
+            background: var(--Black-06, #0f0f0f);
+            width: 205px;
+            .indicators-container {
+              display: flex;
+              width: 69px;
+              align-items: flex-start;
+              gap: 3px;
+              height: 4px;
+            }
+            .button-icon {
+              display: flex;
+              padding: 10px;
+              align-items: flex-start;
+              gap: 10px;
+              border-radius: 6px;
+              width: 44px;
+              height: 44px;
+              border: 1px solid var(--Black-12, #1f1f1f);
+              background: var(--Black-10, #1a1a1a);
+              img {
+                width: 24px;
+                height: 24px;
+              }
+            }
+          }
+          .heading {
+            color: var(--Absolute-White, #fff);
+            font-family: Manrope;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%;
+          }
+        }
+      }
+    }
+    .sub-container-movies {
+      display: flex;
+      padding: 0px 40px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      align-self: stretch;
+      .header-movies {
+        display: flex;
+        padding: 8px 20px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 6px;
+        background: var(--Red-45, #e50000);
+        h2 {
+          color: var(--Absolute-White, #fff);
+          text-align: center;
+          font-family: Manrope;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+}
