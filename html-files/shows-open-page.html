@@ -10,57 +10,54 @@
     <header class="header">
       <nav class="navbar">
         <img class="logo" src="../icons/logo-icon.svg" alt="StreamVibe" />
-        <div class="buttons-container">
-          <button class="search-button" type="submit">
-            <img
-              class="icon"
-              alt="icon-search"
-              src="../icons/icon-search.svg"
-            />
+
+        <div class="nav-list">
+          <button class="home" type="submit">
+            <p class="home-text">Home</p>
           </button>
-          <button class="notification-button" type="submit">
-            <img
-              class="icon"
-              alt="icon-notification"
-              src="../icons/icon-notification.svg"
-            />
-          </button>
+
+          <a href="../html-files/movies-shows-page.html" class="href-text"
+            >Movies&Shows</a
+          >
+
+          <a href="../html-files/support-page.html" class="href-text"
+            >Support</a
+          >
+
+          <a href="../html-files/subscription-page.html" class="href-text"
+            >Subscriptions</a
+          >
         </div>
-        <ul class="nav-list">
-          <li class="list-item">
-            <a href="../html-files/home-page.html">Home</a>
-          </li>
-          <li class="list-item">
-            <a href="../html-files/movies-shows-page.html">Movies&Shows</a>
-          </li>
-          <li class="list-item">
-            <a href="../html-files/support-page.html">Support</a>
-          </li>
-          <li class="list-item">
-            <a href="../html-files/subscription-page.html">Subscriptions</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="search-notification">
-        <form
-          class="search-form"
-          action="../html-files/search-page.html"
-          method="get"
-        >
-          <input
-            class="search-input"
-            type="text"
-            placeholder="Search for movies, shows, and more..."
-            name="search"
+        <div class="buttons-container">
+          <img class="icon" alt="icon-search" src="../icons/icon-search.svg" />
+
+          <img
+            class="icon"
+            alt="icon-notification"
+            src="../icons/icon-notification.svg"
           />
-        </form>
-      </div>
-      <div class="results">
-        <h2>Результати пошуку</h2>
-        <p>Тут будуть відображатися результати...</p>
-      </div>
+        </div>
+        <div class="search-notification">
+          <form
+            class="search-form"
+            action="../html-files/search-page.html"
+            method="get"
+          >
+            <input
+              class="search-input"
+              type="text"
+              placeholder="Search for movies, shows, and more..."
+              name="search"
+            />
+          </form>
+        </div>
+        <div class="results">
+          <h2>Результати пошуку</h2>
+          <p>Тут будуть відображатися результати...</p>
+        </div>
+      </nav>
     </header>
-    <main>
+    <main class="main-content">
       <section class="container-header-stranger">
         <header class="text-container-stranger-header">
           <h1 class="heading-stranger">Stranger Things</h1>
@@ -118,78 +115,76 @@
                   </button>
                 </article>
                 <div class="sub-container-lists">
-                  <section class="sub-container-episodes-seasons">
-                    <ul class="episode-list">
-                      <li class="lists-chapter">
-                        <span class="number">01</span>
-                        <div class="container-of-image">
-                          <button class="button-icon2">
+                  <ul class="episode-list">
+                    <li class="lists-chapter">
+                      <span class="number">01</span>
+                      <div class="container-of-image">
+                        <button class="button-icon2">
+                          <img
+                            class="icon"
+                            src="../icons/Icon-chapter-1-play.svg"
+                          />
+                        </button>
+                      </div>
+                      <div class="container4">
+                        <div class="sub-container-of-heading-text">
+                          <h4 class="heading3">
+                            Chapter One: The Vanishing of Will Byers
+                          </h4>
+                          <div class="sub-container6">
                             <img
                               class="icon"
-                              src="../icons/Icon-chapter-1-play.svg"
+                              alt="Duration Icon"
+                              src="../icons/clock-icon.svg"
                             />
-                          </button>
-                        </div>
-                        <div class="container4">
-                          <div class="sub-container-of-heading-text">
-                            <h4 class="heading3">
-                              Chapter One: The Vanishing of Will Byers
-                            </h4>
-                            <div class="sub-container6">
-                              <img
-                                class="icon"
-                                alt="Duration Icon"
-                                src="../icons/clock-icon.svg"
-                              />
-                              <p class="text2">
-                                <time datetime="PT49M">49 min</time>
-                              </p>
-                            </div>
+                            <p class="text2">
+                              <time datetime="PT49M">49 min</time>
+                            </p>
                           </div>
-                          <p class="paragraph">
-                            On his way home from a friend’s house, young Will
-                            sees something terrifying. Nearby, a sinister secret
-                            lurks in the depths of a government lab.
-                          </p>
                         </div>
-                      </li>
+                        <p class="paragraph">
+                          On his way home from a friend’s house, young Will sees
+                          something terrifying. Nearby, a sinister secret lurks
+                          in the depths of a government lab.
+                        </p>
+                      </div>
+                    </li>
 
-                      <li class="lists-chapter">
-                        <span class="number">02</span>
-                        <div class="container-of-image">
-                          <button class="button-icon2">
+                    <li class="lists-chapter">
+                      <span class="number">02</span>
+                      <div class="container-of-image">
+                        <button class="button-icon2">
+                          <img
+                            alt="Play Episode"
+                            src="../icons/Icon-chapter-1-play.svg"
+                          />
+                        </button>
+                      </div>
+
+                      <div class="container4">
+                        <div class="sub-container-of-heading-text">
+                          <h4 class="heading3">
+                            Chapter Two: The Weirdo on Maple Street
+                          </h4>
+                          <div class="sub-container6">
                             <img
-                              alt="Play Episode"
-                              src="../icons/Icon-chapter-1-play.svg"
+                              class="icon"
+                              alt="Duration Icon"
+                              src="../icons/clock-icon.svg"
                             />
-                          </button>
-                        </div>
-
-                        <div class="container4">
-                          <div class="sub-container-of-heading-text">
-                            <h4 class="heading3">
-                              Chapter Two: The Weirdo on Maple Street
-                            </h4>
-                            <div class="sub-container6">
-                              <img
-                                class="icon"
-                                alt="Duration Icon"
-                                src="../icons/clock-icon.svg"
-                              />
-                              <p class="text2">
-                                <time datetime="PT56M">56 min</time>
-                              </p>
-                            </div>
+                            <p class="text2">
+                              <time datetime="PT56M">56 min</time>
+                            </p>
                           </div>
-                          <p class="paragraph">
-                            Lucas, Mike and Dustin try to talk to the girl they
-                            found in the woods. Hopper questions an anxious
-                            Joyce about an unsettling phone call.
-                          </p>
                         </div>
-                      </li>
-                    </ul>
-                  </section>
+                        <p class="paragraph">
+                          Lucas, Mike and Dustin try to talk to the girl they
+                          found in the woods. Hopper questions an anxious Joyce
+                          about an unsettling phone call.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
 
                   <section class="season-container">
                     <ul class="episode-list">
@@ -302,7 +297,7 @@
                   <p class="text-episodes5">7 Episodes</p>
                 </header>
                 <button class="button-icon-episodes5">
-                  <img alt="View Episodes" src="../icons/icon-arrow-up.svg" />
+                  <img alt="View Episodes" src="../icons/icon-arrow-down.svg" />
                 </button>
               </div>
             </div>
@@ -337,7 +332,7 @@
               <img src="../icons/str-th-actor3.svg" alt="" />
               <img src="../icons/str-th-actor4.svg" alt="" />
               <img src="../icons/str-th-actor5.svg" alt="" />
-              <img src="../icons/str-th-actor6.svg" alt="" />
+              <img src="../icons/str-th-actor8.svg" alt="" />
               <img src="../icons/str-th-actor7.svg" alt="" />
               <img src="../icons/str-th-actor8.svg" alt="" />
             </figure>
@@ -425,21 +420,21 @@
                 </blockquote>
               </div>
             </div>
+            <nav class="buttons-container">
+              <button class="button-icon">
+                <img alt="Previous" src="../icons/icon-previous.svg" />
+              </button>
+              <div class="indicators-container">
+                <span class="shape"></span>
+                <span class="shape1"></span>
+                <span class="shape1"></span>
+                <span class="shape1"></span>
+              </div>
+              <button class="button-icon">
+                <img alt="Next" src="../icons/icon-next.svg" />
+              </button>
+            </nav>
           </section>
-          <nav class="buttons-container">
-            <button class="button-icon">
-              <img alt="Previous" src="../icons/icon-previous.svg" />
-            </button>
-            <div class="indicators-container">
-              <span class="shape"></span>
-              <span class="shape1"></span>
-              <span class="shape1"></span>
-              <span class="shape1"></span>
-            </div>
-            <button class="button-icon">
-              <img alt="Next" src="../icons/icon-next.svg" />
-            </button>
-          </nav>
         </div>
         <section class="show-info">
           <article class="release-year">
@@ -572,7 +567,7 @@
             <header>
               <h2 class="name-director">Director</h2>
             </header>
-            <figure class="director-info">
+            <div class="director-info">
               <img
                 class="image-icon"
                 alt="Director Image"
@@ -582,14 +577,14 @@
                 <p class="name">The Duffer Brothers</p>
                 <p class="origin">From USA</p>
               </figcaption>
-            </figure>
+            </div>
           </article>
 
-          <article class="music">
+          <article class="director">
             <header>
-              <h2 class="name-music">Music</h2>
+              <h2 class="name-director">Music</h2>
             </header>
-            <figure class="music-info">
+            <div class="director-info">
               <img
                 class="image-icon"
                 alt="Composer Image"
@@ -599,7 +594,7 @@
                 <p class="name">Kyle Dixon</p>
                 <p class="origin">From USA</p>
               </figcaption>
-            </figure>
+            </div>
           </article>
         </section>
       </div>

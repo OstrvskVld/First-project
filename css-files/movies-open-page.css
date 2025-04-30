@@ -2,52 +2,21 @@
 body {
   background: var(--Black-08, #141414);
   font-family: Manrope, sans-serif;
-  margin: 0;
-  padding: 20px;
-  width: 120rem;
-  height: 207.75rem;
+  width: 1920px;
+  height: 5518px;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-.header .navbar {
-  width: 100%;
-  position: relative;
+.navbar {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  width: 1921px;
+  padding: 30px 162px;
   justify-content: space-between;
-  padding: 1.875rem 10.125rem;
-  box-sizing: border-box;
-  gap: 0rem;
-  text-align: left;
-  font-size: 1.125rem;
-  color: #bfbfbf;
-  font-family: Manrope;
-}
-.header .navbar .logo {
-  display: flex;
-  width: 199px;
-  justify-content: center;
   align-items: center;
-  gap: 3px;
-  flex-shrink: 0;
 }
-.header .navbar .buttons-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 1.875rem;
-  z-index: 1;
-}
-.header .navbar .buttons-container .search-button .icon {
-  width: 2.125rem;
-  position: relative;
-  height: 2.125rem;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.header .navbar .nav-list {
+.navbar .nav-list {
   margin: 0 !important;
   position: absolute;
   top: calc(50% - 42px);
@@ -71,7 +40,7 @@ body {
   left: 683px;
   top: 22px;
 }
-.header .navbar .nav-list .list-item {
+.navbar .nav-list .list-item {
   list-style: none;
   font-size: 1.125rem;
   font-weight: 500;
@@ -80,11 +49,11 @@ body {
   padding: 0.625rem 1.25rem;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-.header .navbar .nav-list .list-item:hover {
+.navbar .nav-list .list-item:hover {
   background-color: #1f1f1f;
   color: #ffffff;
 }
-.header .navbar .nav-list .list-item a {
+.navbar .nav-list .list-item a {
   position: relative;
   line-height: 150%;
   font-weight: 500;
@@ -100,7 +69,24 @@ body {
   position: relative;
   line-height: 150%;
 }
-.header .search-notification {
+
+.logo {
+  width: 136px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.buttons-container .search-button .icon {
+  width: 34px;
+  height: 34px;
+}
+
+.search-notification {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -109,8 +95,8 @@ body {
   margin: 10px 0;
   z-index: 1;
 }
-.header .search-notification .icon-search,
-.header .search-notification .icon-notification {
+.search-notification .icon-search,
+.search-notification .icon-notification {
   width: 2.1256rem;
   position: relative;
   height: 2.125rem;
