@@ -1031,6 +1031,54 @@ footer .container .sub-container .heading {
     align-self: stretch;
     width: 1200px;
   }
+  .movie-hero-movies-container .main-container .container .sub-container1 .active .container1-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+  .movie-hero-movies-container .main-container .container .sub-container1 .active .container1-1 .sub-container3 {
+    display: flex;
+    padding: 4px 8px 4px 4px;
+    align-items: center;
+    gap: 4px;
+    border-radius: 51px;
+    border: 1px solid var(--Black-15, #262626);
+    background: var(--Black-08, #141414);
+  }
+  .movie-hero-movies-container .main-container .container .sub-container1 .active .container1-1 .sub-container3 img {
+    width: 20px;
+    height: 20px;
+  }
+  .movie-hero-movies-container .main-container .container .sub-container1 .active .container1-1 .sub-container3 .text {
+    color: var(--Grey-60, #999);
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .movie-hero-movies-container .main-container .container .sub-container1 .active .container1-1 .sub-container2 {
+    display: flex;
+    padding: 4px 8px 4px 4px;
+    align-items: center;
+    gap: 2px;
+    border-radius: 51px;
+    border: 1px solid var(--Black-15, #262626);
+    background: var(--Black-08, #141414);
+  }
+  .movie-hero-movies-container .main-container .container .sub-container1 .active .container1-1 .sub-container2 img {
+    width: 20px;
+    height: 20px;
+  }
+  .movie-hero-movies-container .main-container .container .sub-container1 .active .container1-1 .sub-container2 .text {
+    color: var(--Grey-60, #999);
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
   .movie-hero-movies-container .main-container .container .sub-container1 .active .card {
     display: flex;
     padding: 5px;
@@ -1041,6 +1089,37 @@ footer .container .sub-container .heading {
     border: 1px solid var(--Black-15, #262626);
     background: var(--Black-10, #1a1a1a);
     width: 224px;
+  }
+  .movie-hero-movies-container .main-container .container .sub-container1 .active .card .image-container2 img {
+    width: 192px;
+  }
+  .movie-hero-movies-container .main-container .container .sub-container1 .active .card .container1_1 {
+    display: flex;
+    padding: 6px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 51px;
+    border: 1px solid var(--Black-15, #262626);
+    background: var(--Black-08, #141414);
+  }
+  .movie-hero-movies-container .main-container .container .sub-container1 .active .card .container1_1 .text {
+    color: var(--Grey-60, #999);
+    text-align: center;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--Grey-75, #bfbfbf);
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .movie-hero-movies-container .main-container .container .sub-container1 .active .card .image-container1 img {
+    width: 192px;
   }
   .movie-hero-movies-container .main-container .container .sub-container1 .active .card .container1 {
     display: flex;
