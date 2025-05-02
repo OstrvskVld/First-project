@@ -9,9 +9,9 @@
   </head>
   <body>
     <header class="header">
+      <input type="checkbox" name="burger" id="burger" class="burger" />
+      <img class="logo" src="../icons/logo-icon.svg" alt="StreamVibe" />
       <nav class="navbar">
-        <img class="logo" src="../icons/logo-icon.svg" alt="StreamVibe" />
-
         <div class="nav-list">
           <button class="home" type="submit">
             <p class="home-text">Home</p>
@@ -58,6 +58,7 @@
         </div>
       </nav>
     </header>
+
     <main class="main-content">
       <section class="film-intro-section">
         <div class="suggestion-films">
@@ -145,15 +146,13 @@
       <section class="categories-section">
         <div class="sub-container1">
           <div class="text-container">
-            <article class="categories-article">
-              <h2 class="categories-heading">
-                Explore our wide variety of categories
-              </h2>
-              <div class="paragraph">
-                Whether you're looking for a comedy to make you laugh, a drama
-                to make you think, or a documentary to learn something new
-              </div>
-            </article>
+            <h2 class="categories-heading">
+              Explore our wide variety of categories
+            </h2>
+            <div class="paragraph">
+              Whether you're looking for a comedy to make you laugh, a drama to
+              make you think, or a documentary to learn something new
+            </div>
           </div>
           <div class="buttons-container">
             <img
@@ -361,21 +360,23 @@
             </div>
           </article>
         </div>
+        <div class="indicators-container-burger">
+          <div class="shape"><span></span></div>
+        </div>
       </section>
       <section class="devices-section">
-        <div class="devices-intro">
-          <article class="devices-article">
-            <h2 class="devices-article__heading">
-              We Provide you streaming experience across various devices.
-            </h2>
-            <p class="devices-article__description">
-              With StreamVibe, you can enjoy your favorite movies and TV shows
-              anytime, anywhere. Our platform is designed to be compatible with
-              a wide range of devices, ensuring that you never miss a moment of
-              entertainment.
-            </p>
-          </article>
-        </div>
+        <article class="devices-article">
+          <h2 class="devices-article__heading">
+            We Provide you streaming experience across various devices.
+          </h2>
+          <p class="devices-article__description">
+            With StreamVibe, you can enjoy your favorite movies and TV shows
+            anytime, anywhere. Our platform is designed to be compatible with a
+            wide range of devices, ensuring that you never miss a moment of
+            entertainment.
+          </p>
+        </article>
+
         <div class="sub-container-devices">
           <div class="devices-grid1">
             <article class="device-card">
@@ -496,6 +497,101 @@
         </div>
 
         <div class="faq__container">
+          <div class="faq__column-burger">
+            <article class="faq__item--open">
+              <div class="faq__question">
+                <span class="faq__number">01</span>
+              </div>
+              <div class="faq__answer">
+                <h3 class="faq__question-text">What is StreamVibe?</h3>
+                <p>
+                  StreamVibe is a streaming service that allows you to watch
+                  movies and shows on demand.
+                </p>
+              </div>
+              <img
+                class="faq__icon"
+                src="../icons/icon-minus.svg"
+                alt="icon-minus"
+              />
+            </article>
+
+            <div class="faq__divider"></div>
+
+            <article class="faq__item">
+              <div class="faq__question">
+                <span class="faq__number">02</span>
+              </div>
+              <h3 class="faq__question-text">How much does StreamVibe cost?</h3>
+              <img
+                class="faq__icon"
+                src="../icons/icon-plus.svg"
+                alt="icon-plus"
+              />
+            </article>
+
+            <div class="faq__divider"></div>
+
+            <article class="faq__item">
+              <div class="faq__question">
+                <span class="faq__number">03</span>
+              </div>
+              <h3 class="faq__question-text">
+                What content is available on StreamVibe?
+              </h3>
+              <img
+                class="faq__icon"
+                src="../icons/icon-plus.svg"
+                alt="icon-plus"
+              />
+            </article>
+
+            <div class="faq__divider"></div>
+
+            <article class="faq__item">
+              <div class="faq__question">
+                <span class="faq__number">04</span>
+              </div>
+              <h3 class="faq__question-text">How can I watch StreamVibe?</h3>
+              <img
+                class="faq__icon"
+                src="../icons/icon-plus.svg"
+                alt="icon-plus"
+              />
+            </article>
+
+            <div class="faq__divider"></div>
+
+            <article class="faq__item">
+              <div class="faq__question">
+                <span class="faq__number">05</span>
+              </div>
+              <h3 class="faq__question-text">
+                How do I sign up for StreamVibe?
+              </h3>
+              <img
+                class="faq__icon"
+                src="../icons/icon-plus.svg"
+                alt="icon-plus"
+              />
+            </article>
+
+            <div class="faq__divider"></div>
+
+            <article class="faq__item">
+              <div class="faq__question">
+                <span class="faq__number">06</span>
+              </div>
+              <h3 class="faq__question-text">
+                What is the StreamVibe free trial?
+              </h3>
+              <img
+                class="faq__icon"
+                src="../icons/icon-plus.svg"
+                alt="icon-plus"
+              />
+            </article>
+          </div>
           <div class="faq__column">
             <article class="faq__item--open">
               <div class="faq__question">
@@ -783,12 +879,12 @@
           </ul>
         </nav>
 
-        <section class="sub-container">
+        <nav class="sub-container">
           <h2 class="heading">Support</h2>
           <ul class="links-container">
             <li><a href="#" class="text-button">Contact Us</a></li>
           </ul>
-        </section>
+        </nav>
 
         <nav class="sub-container">
           <h2 class="heading">Subscription</h2>
