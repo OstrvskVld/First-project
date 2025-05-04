@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+.burger {
+  display: none;
+}
+
 .header .navbar {
   width: 100%;
   position: relative;

@@ -9,6 +9,10 @@ body {
   padding: 0;
 }
 
+.burger {
+  display: none;
+}
+
 .navbar {
   display: flex;
   width: 1921px;
