@@ -1957,6 +1957,7 @@ footer .container .sub-container .heading {
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
+    width: 200px;
   }
   footer {
     display: flex;
