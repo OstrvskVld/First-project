@@ -1135,7 +1135,6 @@ footer {
 
     .container {
         display: flex;
-
         justify-content: space-between;
         gap: 30px;
         align-self: stretch;
@@ -2311,7 +2310,7 @@ footer {
 
     .container {
         display: flex;
-        align-items: center;
+        
         justify-content: space-between;
         gap: 30px;
         align-self: stretch;
@@ -2894,7 +2893,7 @@ footer {
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 700;
-                
+
                 // line-height: 150%;
                 text-align: center;
             }
@@ -2953,7 +2952,7 @@ footer {
                 align-items: flex-start;
                 gap: 16px;
                 flex: 1 0 0;
-                
+
 
                 .buttons-container {
                     display: flex;
@@ -3012,7 +3011,7 @@ footer {
             align-self: stretch;
 
             .line {
-               
+
                 height: 1px;
             }
 
