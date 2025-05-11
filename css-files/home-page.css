@@ -1220,7 +1220,8 @@ footer .container .sub-container .heading {
     align-self: stretch;
   }
   .streaming-promo .sub-container {
-    padding-left: 0px 150px;
+    width: 1140px;
+    padding: 0px 150px;
   }
   .streaming-promo .sub-container .streaming-promo__content {
     display: flex;

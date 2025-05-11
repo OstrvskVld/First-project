@@ -146,7 +146,6 @@ body figure {
 
 .container-header-stranger {
   display: flex;
-  width: 1594px;
   height: 835px;
   padding: 50px 50px 20px 50px;
   flex-direction: column;
@@ -739,7 +738,6 @@ body figure {
 }
 .buttons-container .button-icon {
   display: flex;
-  padding: 8px !important;
   align-items: center;
   gap: 0.625rem;
   border-radius: 100px !important;
@@ -1332,31 +1330,20 @@ footer .container .sub-container .heading {
 
 @media (max-width: 1440px) {
   body {
-    width: 1440px;
     overflow-x: hidden;
-    margin: 0;
   }
-  .header {
-    width: 1440px;
-    box-sizing: border-box;
+  .burger-wrapper {
+    display: none;
   }
-  .main-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-  }
-  .navbar {
+  .header .navbar {
     box-sizing: border-box;
     display: flex;
     width: 1439px;
-    height: 100px;
     padding: 24px 80px;
     justify-content: space-between;
     align-items: center;
   }
-  .navbar .nav-list {
+  .header .navbar .nav-list {
     position: static;
     width: 412px;
     height: 61px;
@@ -1366,7 +1353,7 @@ footer .container .sub-container .heading {
     border: 3px solid var(--Black-12, #1f1f1f);
     background: var(--Black-06, #0f0f0f);
   }
-  .navbar .nav-list .href-text {
+  .header .navbar .nav-list .href-text {
     width: 104px;
     height: 21px;
     color: var(--Grey-75, #bfbfbf);
@@ -1376,7 +1363,7 @@ footer .container .sub-container .heading {
     font-weight: 400;
     line-height: 150%;
   }
-  .navbar .nav-list .home {
+  .header .navbar .nav-list .home {
     width: 79px;
     height: 45px;
     border-radius: 8px;
@@ -1387,7 +1374,7 @@ footer .container .sub-container .heading {
     border: 1px solid var(--Black-10, #1a1a1a);
     background: var(--Black-10, #1a1a1a);
   }
-  .navbar .nav-list .home .home-text {
+  .header .navbar .nav-list .home .home-text {
     color: #fff;
     font-family: Manrope;
     font-size: 14px;
@@ -1397,72 +1384,87 @@ footer .container .sub-container .heading {
     width: 39px;
     height: 21px;
   }
-  .navbar .buttons-container {
+  .header .navbar .buttons-container {
     gap: 14px;
     width: 62px;
     height: 24px;
     margin-right: 0;
   }
-  .navbar .buttons-container .icon {
+  .header .navbar .buttons-container .icon {
     width: 24px;
     height: 24px;
   }
-  .navbar .search-notification {
+  .header .navbar .search-notification {
     display: none;
   }
-  .navbar .logo {
+  .header .navbar .logo {
     width: 113.333px;
     height: 16.667px;
     flex-shrink: 0;
   }
-  .cta-section {
+  .main-content {
     display: flex;
-    width: 1280px;
-    height: auto;
-    align-items: center;
-    gap: 100px;
-    border-radius: 12px;
-    border: 1px solid #262626;
-    background: var(--Black-06, #0f0f0f);
-  }
-  .cta-section .cta-container {
-    position: relative;
-  }
-  .cta-section .cta-container .cta-background .fade-out-left {
-    width: 100%;
-    height: 100%;
-  }
-  .cta-section .primary-button {
-    display: flex;
-    padding: 14px 20px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    border-radius: 8px;
-    background: var(--Red-45, #e50000);
-    color: var(--Absolute-White, #fff);
-    font-family: Manrope;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
+    height: auto;
   }
-  .cta-section .cta-content {
+  .main-content section {
+    width: 1280px;
+  }
+  .cta-container {
+    width: 1280px;
+    overflow: hidden;
+  }
+  .cta-container .cta-background {
+    position: relative;
+    width: 1280px;
+  }
+  .cta-container .cta-background .fade-out-left {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #0F0F0F 2.42%, rgba(20, 15, 15, 0.97) 25.46%, rgba(34, 14, 14, 0.91) 46.72%, rgba(229, 0, 0, 0) 168.98%);
+    bottom: 25px;
+  }
+  .cta-container .cta-background .image-container {
+    display: block;
+    align-items: flex-start;
+    gap: 0px !important;
+    width: 1280px;
+    overflow: hidden;
+  }
+  .cta-container .cta-background .image-container img {
+    width: 1280px;
+  }
+  .cta-content {
+    width: 1100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 450px;
+    z-index: 1;
+    position: absolute;
+    top: 25%;
+    left: 80px;
+  }
+  .cta-content .text-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
-    flex: 1 0 0;
+    gap: 14px;
   }
-  .cta-section .cta-content .cta-title {
-    color: var(--Absolute-White, #fff);
+  .cta-content .text-container .cta-title {
+    color: var(--Absolute-White, #FFF);
     font-family: Manrope;
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
   }
-  .cta-section .cta-content .cta-title .cta-text {
+  .cta-content .text-container .cta-text {
     color: var(--Grey-60, #999);
     font-family: Manrope;
     font-size: 16px;
@@ -1470,83 +1472,61 @@ footer .container .sub-container .heading {
     font-weight: 400;
     line-height: 150%;
   }
-  .cta-section .cta-background {
+  .primary-button {
     display: flex;
-    width: 1281px;
-    height: 355px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    position: absolute;
-    right: -1px;
-    top: -60px;
-  }
-  .cta-section .cta-background .fade-out-left {
-    width: 1283px;
-    height: 250px;
-    position: absolute;
-    left: -2px;
-    bottom: 52px;
-    background: linear-gradient(90deg, #0f0f0f 2.42%, rgba(20, 15, 15, 0.97) 25.46%, rgba(34, 14, 14, 0.91) 46.72%, rgba(229, 0, 0, 0) 168.98%);
-  }
-  .cta-section .cta-background .image-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    flex: 1 0 0;
-    align-self: stretch;
-  }
-  .footer {
-    display: flex;
-    width: 1440px;
-    padding: 80px 80px 40px 80px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 80px;
-  }
-  .footer .container {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    align-self: stretch;
-  }
-  .footer .container .sub-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 18px 24px;
     justify-content: center;
-    width: 197px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: var(--Red-45, #E50000);
+    color: var(--Absolute-White, #FFF);
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    width: 200px;
   }
-  .footer .container .sub-container .heading {
-    color: var(--Absolute-White, #fff);
+  footer {
+    display: flex;
+    background: var(--Black-06, #0F0F0F);
+    padding: 100px 162px 50px 162px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 100px;
+  }
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-self: stretch;
+  }
+  footer .container .sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+  footer .container .sub-container .links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    align-self: stretch;
+    padding: 0;
+  }
+  footer .container .sub-container .heading {
+    align-self: stretch;
+    color: var(--Absolute-White, #FFF);
     font-family: Manrope;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
-    margin-bottom: 0;
   }
-  .footer .container .sub-container .buttons-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-  }
-  .footer .container .sub-container .buttons-container .button-icon {
-    display: flex;
-    padding: 12px;
-    align-items: flex-start;
-    gap: 10px;
-    border-radius: 6px;
-    border: 1px solid var(--Black-15, #262626);
-    background: var(--Black-10, #1a1a1a);
-  }
-  .footer .container .sub-container .links-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-  .footer .container .sub-container .links-container .text-button {
+  .text-button {
+    align-self: stretch;
     color: var(--Grey-60, #999);
     font-family: Manrope;
     font-size: 16px;
@@ -1554,61 +1534,70 @@ footer .container .sub-container .heading {
     font-weight: 500;
     line-height: 150%;
   }
-  .footer .container1 {
+  .buttons-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .buttons-container .button-icon {
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--Black-15, #262626);
+    background: var(--Black-10, #1a1a1a);
+    all: unset;
+  }
+  .buttons-container .button-icon img {
+    width: 24px;
+    height: 24px;
+  }
+  .container1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 24px;
     align-self: stretch;
   }
-  .footer .container1 .container2 {
+  .container1 .line {
+    width: 100%;
+    height: 1px;
+    background: #262626;
+  }
+  .container1 .container2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
   }
-  .footer .container1 .container2 .buttons-container1 {
+  .container1 .container2 .buttons-container1 {
     display: flex;
     align-items: flex-start;
-    gap: 16px;
+    gap: 20px;
   }
-  .footer .container1 .container2 .buttons-container1 .line1 {
-    width: 1px;
-    height: 21px;
-    background: #262626;
-  }
-  .footer .container1 .container2 .buttons-container1 .text2 {
+  .container1 .container2 .buttons-container1 .text2 {
     color: var(--Grey-60, #999);
     font-family: Manrope;
-    font-size: 14px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
   }
-  .footer .container1 .container2 .text1 {
+  .container1 .container2 .text1 {
     color: var(--Grey-60, #999);
     font-family: Manrope;
-    font-size: 14px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
   }
-  .footer .container1 .line {
-    width: 1280px;
-  }
-  .footer .container {
-    box-sizing: border-box;
-    width: 1280px;
-  }
-  .footer .sub-container {
-    box-sizing: border-box;
-    width: 200px;
+  .burger-wrapper {
+    display: none;
   }
   .container-header-stranger {
     display: flex;
-    width: 1280px;
-    height: 709px;
-    padding: 400px 40px 16px 40px;
+    padding: 550px 40px 16px 40px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1617,6 +1606,33 @@ footer .container .sub-container .heading {
     box-sizing: border-box;
     border-radius: 12px;
     border: 1px solid #262626;
+  }
+  .container-header-stranger .text-container-stranger-header {
+    display: flex;
+    padding: 0px 120px;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+    box-sizing: border-box;
+  }
+  .container-header-stranger .text-container-stranger-header .heading-stranger {
+    color: var(--Absolute-White, #fff);
+    text-align: center;
+    font-family: Manrope;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+  .container-header-stranger .text-container-stranger-header .paragraph-stranger {
+    color: var(--Grey-60, #999);
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
   }
   .container-header-stranger .container-header-buttons {
     display: flex;
@@ -1651,37 +1667,10 @@ footer .container .sub-container .heading {
   .container-header-stranger .container-header-buttons .button-header .text-play {
     color: var(--Absolute-White, #fff);
     font-family: Manrope;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: 153%;
-  }
-  .container-header-stranger .text-container-stranger-header {
-    display: flex;
-    padding: 0px 120px;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    align-self: stretch;
-    box-sizing: border-box;
-  }
-  .container-header-stranger .text-container-stranger-header .heading-stranger {
-    color: var(--Absolute-White, #fff);
-    text-align: center;
-    font-family: Manrope;
-    font-size: 38px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
-  }
-  .container-header-stranger .text-container-stranger-header .paragraph-stranger {
-    color: var(--Grey-60, #999);
-    text-align: center;
-    font-family: Manrope;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
   }
   .container-main-shows {
     box-sizing: border-box;
@@ -1696,7 +1685,279 @@ footer .container .sub-container .heading {
     flex-direction: column;
     align-items: flex-end;
     gap: 20px;
+    width: 850px;
     flex: 1 0 0;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes {
+    box-sizing: border-box;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+    border-radius: 12px;
+    background: var(--Black-10, #1a1a1a);
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .container-header .heading {
+    color: #fff;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-season3 {
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 10px;
+    border: 1px solid var(--Black-15, #262626);
+    background: var(--Black-06, #0f0f0f);
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-season3 .sub-container-season2-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-season3 .sub-container-season2-header .button-icon-episodes5 {
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 1px solid var(--Black-15, #262626);
+    background: var(--Black-08, #141414);
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-season3 .sub-container-season2-header .button-icon-episodes5 img {
+    width: 20px;
+    height: 20px;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-season3 .sub-container-season2-header .heading-season2 {
+    color: var(--Absolute-White, #fff);
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-season3 .sub-container-season2-header .text-episodes5 {
+    color: var(--Grey-60, #999);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 {
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 10px;
+    border: 1px solid var(--Black-15, #262626);
+    background: var(--Black-06, #0f0f0f);
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list {
+    padding: 0;
+    margin: 0;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter {
+    display: flex;
+    padding: 30px 0px 40px 0px;
+    align-items: center;
+    gap: 18px;
+    align-self: stretch;
+    box-sizing: border-box;
+    border-top: 1px solid var(--Black-15, #262626);
+    border-bottom: 1px solid var(--Black-15, #262626);
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter .number {
+    width: 30px;
+    color: var(--Grey-60, #999);
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter .container4 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter .container4 .paragraph {
+    align-self: stretch;
+    color: var(--Grey-60, #999);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter .container4 .sub-container-of-heading-text {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    box-sizing: border-box;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter .container4 .sub-container-of-heading-text .heading3 {
+    flex: 1 0 0;
+    color: var(--Absolute-White, #fff);
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter .container4 .sub-container-of-heading-text .sub-container6 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 6px;
+    border: 1px solid var(--Black-15, #262626);
+    background: var(--Black-08, #141414);
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter .container4 .sub-container-of-heading-text .sub-container6 img {
+    width: 20px;
+    height: 20px;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter .container4 .sub-container-of-heading-text .sub-container6 .text2 {
+    color: var(--Grey-60, #999);
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter .container-of-image {
+    display: flex;
+    width: 100px;
+    padding: 34px 72px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    border: 1px solid var(--Black-15, #262626);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(<path-to-image>) lightgray -12.667px 0px/114.729% 100% no-repeat;
+    background-image: url("../icons/chapter-1.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter .container-of-image .button-icon2 {
+    display: flex;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 67px;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter .container-of-image .button-icon2 img {
+    width: 30px;
+    height: 30px;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .container-season2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .container-season2 .button-icon-episodes5 {
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 1px solid var(--Black-15, #262626);
+    background: var(--Black-08, #141414);
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .container-season2 .button-icon-episodes5 img {
+    width: 20px;
+    height: 20px;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .container-season2 .sub-container-season2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .container-season2 .sub-container-season2 .heading-season2 {
+    color: var(--Absolute-White, #fff);
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .container-season2 .sub-container-season2 .text-episodes5 {
+    color: var(--Grey-60, #999);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .container-view-episodes {
+    box-sizing: border-box;
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 10px;
+    border: 1px solid var(--Black-15, #262626);
+    background: var(--Black-06, #0f0f0f);
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .container-view-episodes .button-icon-episodes {
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    gap: 10px;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .container-view-episodes .button-icon-episodes img {
+    width: 20px;
+    height: 20px;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .container-view-episodes .text-container-season-1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .container-view-episodes .text-container-season-1 .heading-season1 {
+    color: var(--Absolute-White, #fff);
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .container-main-shows .sub-container-main-left .container-main-left-seasons-episodes .sub-container-shows-left .container-view-episodes .text-container-season-1 .text-episodes {
+    color: var(--Grey-60, #999);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
   }
   .container-main-shows .show-info {
     box-sizing: border-box;
@@ -1853,7 +2114,7 @@ footer .container .sub-container .heading {
   }
   .container-main-shows .show-info .genres .genre-list .genre-li {
     display: flex;
-    padding: 6px 12px;
+    padding: 6px 10px;
     align-items: flex-start;
     gap: 10px;
     border-radius: 6px;
@@ -1867,6 +2128,8 @@ footer .container .sub-container .heading {
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
+    padding: 0;
+    margin: 0;
   }
   .container-main-shows .show-info .director {
     display: flex;
@@ -1890,7 +2153,6 @@ footer .container .sub-container .heading {
     align-items: center;
     gap: 8px;
     align-self: stretch;
-    padding: 0;
   }
   .container-main-shows .show-info .director .director-info img {
     width: 47.133px;
@@ -1982,6 +2244,127 @@ footer .container .sub-container .heading {
     border: 1px solid var(--Black-15, #262626);
     background: var(--Black-10, #1a1a1a);
   }
+  .container-main-shows .container-reviews .sub-container-reviews {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    align-self: stretch;
+  }
+  .container-main-shows .container-reviews .sub-container-reviews .heading-reviews {
+    flex: 1 0 0;
+    color: var(--Grey-60, #999);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .container-main-shows .container-reviews .sub-container-reviews .button-reviews {
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    gap: 4px;
+    border-radius: 6px;
+    border: 1px solid var(--Black-15, #262626);
+    background: var(--Black-08, #141414);
+  }
+  .container-main-shows .container-reviews .sub-container-reviews .button-reviews img {
+    width: 24px;
+    height: 24px;
+  }
+  .container-main-shows .container-reviews .sub-container-reviews .button-reviews .text-reviews {
+    color: var(--Absolute-White, #fff);
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%;
+  }
+  .container-main-shows .container-reviews .sub-container-of-people {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+  }
+  .container-main-shows .container-reviews .sub-container-of-people .sub-container-of-person {
+    display: flex;
+    padding: 30px;
+    height: 190px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1 0 0;
+    border-radius: 12px;
+    border: 1px solid var(--Black-15, #262626);
+    background: var(--Black-06, #0f0f0f);
+  }
+  .container-main-shows .container-reviews .sub-container-of-people .sub-container-of-person .review-text {
+    align-self: stretch;
+    color: var(--Grey-60, #999);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .container-main-shows .container-reviews .sub-container-of-people .sub-container-of-person .rating {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+    align-self: stretch;
+  }
+  .container-main-shows .container-reviews .sub-container-of-people .sub-container-of-person .rating .review-rating {
+    display: flex;
+    padding: 4px 8px;
+    height: 29px;
+    align-items: center;
+    gap: 2px;
+    border-radius: 51px;
+    border: 1px solid var(--Black-15, #262626);
+    background: var(--Black-08, #141414);
+  }
+  .container-main-shows .container-reviews .sub-container-of-people .sub-container-of-person .rating .review-rating .rating-value {
+    color: var(--Grey-60, #999);
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .container-main-shows .container-reviews .sub-container-of-people .sub-container-of-person .rating .review-rating .stars {
+    display: flex;
+    align-items: flex-start;
+    gap: 1px;
+  }
+  .container-main-shows .container-reviews .sub-container-of-people .sub-container-of-person .rating .review-rating .stars img {
+    width: 14px;
+    height: 14px;
+  }
+  .container-main-shows .container-reviews .sub-container-of-people .sub-container-of-person .rating .container-rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 0 0;
+  }
+  .container-main-shows .container-reviews .sub-container-of-people .sub-container-of-person .rating .container-rating .reviewer-name {
+    align-self: stretch;
+    color: var(--Absolute-White, #fff);
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .container-main-shows .container-reviews .sub-container-of-people .sub-container-of-person .rating .container-rating .reviewer-location {
+    align-self: stretch;
+    color: var(--Grey-60, #999);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
   .container-main-shows .container-reviews .buttons-container {
     display: flex;
     align-items: center;
@@ -2007,127 +2390,36 @@ footer .container .sub-container .heading {
     align-items: flex-start;
     gap: 3px;
   }
-  .container-main-shows .container-reviews .buttons-container .sub-container-of-people {
+  .container-main-shows .text-container-description {
     display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    align-self: stretch;
-  }
-  .container-main-shows .container-reviews .buttons-container .sub-container-of-people .sub-container-of-person {
-    display: flex;
-    padding: 30px;
+    padding: 40px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
-    flex: 1 0 0;
-    border-radius: 12px;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 10px;
     border: 1px solid var(--Black-15, #262626);
-    background: var(--Black-06, #0f0f0f);
+    background: var(--Black-10, #1a1a1a);
   }
-  .container-main-shows .container-reviews .buttons-container .sub-container-of-people .sub-container-of-person .review-text {
+  .container-main-shows .text-container-description .name-description {
     align-self: stretch;
     color: var(--Grey-60, #999);
     font-family: Manrope;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-  }
-  .container-main-shows .container-reviews .buttons-container .sub-container-of-people .sub-container-of-person .rating {
-    display: flex;
-    align-items: center;
-    gap: 41px;
-    align-self: stretch;
-  }
-  .container-main-shows .container-reviews .buttons-container .sub-container-of-people .sub-container-of-person .rating .review-rating {
-    display: flex;
-    padding: 4px 8px;
-    height: 29px;
-    align-items: center;
-    gap: 2px;
-    border-radius: 51px;
-    border: 1px solid var(--Black-15, #262626);
-    background: var(--Black-08, #141414);
-  }
-  .container-main-shows .container-reviews .buttons-container .sub-container-of-people .sub-container-of-person .rating .review-rating .rating-value {
-    color: var(--Grey-60, #999);
-    font-family: Manrope;
-    font-size: 14px;
-    font-style: normal;
     font-weight: 500;
     line-height: 150%;
   }
-  .container-main-shows .container-reviews .buttons-container .sub-container-of-people .sub-container-of-person .rating .review-rating .stars {
-    display: flex;
-    align-items: flex-start;
-    gap: 1px;
-  }
-  .container-main-shows .container-reviews .buttons-container .sub-container-of-people .sub-container-of-person .rating .review-rating .stars img {
-    width: 14px;
-    height: 14px;
-  }
-  .container-main-shows .container-reviews .buttons-container .sub-container-of-people .sub-container-of-person .rating .container-rating {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    flex: 1 0 0;
-  }
-  .container-main-shows .container-reviews .buttons-container .sub-container-of-people .sub-container-of-person .rating .container-rating .reviewer-name {
+  .container-main-shows .text-container-description .paragraph-description {
     align-self: stretch;
     color: var(--Absolute-White, #fff);
     font-family: Manrope;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-  }
-  .container-main-shows .container-reviews .buttons-container .sub-container-of-people .sub-container-of-person .rating .container-rating .reviewer-name .reviewer-location {
-    align-self: stretch;
-    color: var(--Grey-60, #999);
-    font-family: Manrope;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
   }
-  .container-main-shows .container-reviews .buttons-container .sub-container-reviews {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    align-self: stretch;
-  }
-  .container-main-shows .container-reviews .buttons-container .sub-container-reviews .heading-reviews {
-    flex: 1 0 0;
-    color: var(--Grey-60, #999);
-    font-family: Manrope;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-  }
-  .container-main-shows .container-reviews .buttons-container .sub-container-reviews .button-reviews {
-    display: flex;
-    padding: 12px;
-    align-items: center;
-    gap: 4px;
-    border-radius: 6px;
-    border: 1px solid var(--Black-15, #262626);
-    background: var(--Black-08, #141414);
-  }
-  .container-main-shows .container-reviews .buttons-container .sub-container-reviews .button-reviews img {
-    width: 24px;
-    height: 24px;
-  }
-  .container-main-shows .container-reviews .buttons-container .sub-container-reviews .button-reviews .text-reviews {
-    color: var(--Absolute-White, #fff);
-    font-family: Manrope;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 153%;
-  }
-  .container-main-shows .container-reviews .container-cast {
+  .container-main-shows .container-cast {
     display: flex;
     padding: 40px;
     flex-direction: column;
@@ -2138,24 +2430,24 @@ footer .container .sub-container .heading {
     border: 1px solid var(--Black-15, #262626);
     background: var(--Black-10, #1a1a1a);
   }
-  .container-main-shows .container-reviews .container-cast .image-container-cast {
+  .container-main-shows .container-cast .image-container-cast {
     display: flex;
     align-items: flex-start;
     gap: 10px;
     align-self: stretch;
   }
-  .container-main-shows .container-reviews .container-cast .image-container-cast img {
+  .container-main-shows .container-cast .image-container-cast img {
     height: 89px;
     flex: 1 0 0;
     width: 88px;
   }
-  .container-main-shows .container-reviews .container-cast .sub-container-cast {
+  .container-main-shows .container-cast .sub-container-cast {
     display: flex;
     align-items: center;
     gap: 30px;
     align-self: stretch;
   }
-  .container-main-shows .container-reviews .container-cast .sub-container-cast .heading-cast {
+  .container-main-shows .container-cast .sub-container-cast .heading-cast {
     flex: 1 0 0;
     color: #999;
     font-family: Archivo;
@@ -2164,12 +2456,12 @@ footer .container .sub-container .heading {
     font-weight: 500;
     line-height: 150%;
   }
-  .container-main-shows .container-reviews .container-cast .sub-container-cast .buttons-container-cast {
+  .container-main-shows .container-cast .sub-container-cast .buttons-container-cast {
     display: flex;
     align-items: flex-start;
     gap: 8px;
   }
-  .container-main-shows .container-reviews .container-cast .sub-container-cast .buttons-container-cast .button-icon-cast {
+  .container-main-shows .container-cast .sub-container-cast .buttons-container-cast .button-icon-cast {
     display: flex;
     padding: 12px;
     align-items: center;
@@ -2178,310 +2470,9 @@ footer .container .sub-container .heading {
     border: 1px solid var(--Black-15, #262626);
     background: var(--Black-08, #141414);
   }
-  .container-main-shows .container-reviews .container-cast .sub-container-cast .buttons-container-cast .button-icon-cast img {
+  .container-main-shows .container-cast .sub-container-cast .buttons-container-cast .button-icon-cast img {
     width: 20px;
     height: 20px;
-  }
-  .container-main-shows .container-reviews .text-container-description {
-    display: flex;
-    padding: 40px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    align-self: stretch;
-    border-radius: 10px;
-    border: 1px solid var(--Black-15, #262626);
-    background: var(--Black-10, #1a1a1a);
-  }
-  .container-main-shows .container-reviews .text-container-description .name-description {
-    align-self: stretch;
-    color: var(--Grey-60, #999);
-    font-family: Manrope;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-  }
-  .container-main-shows .container-reviews .text-container-description .paragraph-description {
-    align-self: stretch;
-    color: var(--Absolute-White, #fff);
-    font-family: Manrope;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes {
-    box-sizing: border-box;
-    display: flex;
-    padding: 30px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-    align-self: stretch;
-    border-radius: 12px;
-    background: var(--Black-10, #1a1a1a);
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes header .heading {
-    color: #fff;
-    font-family: Manrope;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    align-self: stretch;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-season3 {
-    display: flex;
-    padding: 20px 40px;
-    justify-content: space-between;
-    align-items: center;
-    align-self: stretch;
-    border-radius: 10px;
-    border: 1px solid var(--Black-15, #262626);
-    background: var(--Black-06, #0f0f0f);
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-season3 .sub-container-season2-header {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-season3 .sub-container-season2-header .button-icon-episodes5 {
-    display: flex;
-    padding: 12px;
-    align-items: center;
-    gap: 10px;
-    border-radius: 100px;
-    border: 1px solid var(--Black-15, #262626);
-    background: var(--Black-08, #141414);
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-season3 .sub-container-season2-header .button-icon-episodes5 img {
-    width: 20px;
-    height: 20px;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-season3 .sub-container-season2-header .heading-season2 {
-    color: var(--Absolute-White, #fff);
-    font-family: Manrope;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-season3 .sub-container-season2-header .text-episodes5 {
-    color: var(--Grey-60, #999);
-    font-family: Manrope;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 {
-    display: flex;
-    padding: 40px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    align-self: stretch;
-    border-radius: 10px;
-    border: 1px solid var(--Black-15, #262626);
-    background: var(--Black-06, #0f0f0f);
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-self: stretch;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list {
-    padding: 0;
-    margin: 0;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter {
-    display: flex;
-    padding: 30px 0px 40px 0px;
-    align-items: center;
-    gap: 18px;
-    align-self: stretch;
-    box-sizing: border-box;
-    border-top: 1px solid var(--Black-15, #262626);
-    border-bottom: 1px solid var(--Black-15, #262626);
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter .number {
-    width: 30px;
-    color: var(--Grey-60, #999);
-    font-family: Manrope;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter .container4 {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    flex: 1 0 0;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter .container4 .paragraph {
-    align-self: stretch;
-    color: var(--Grey-60, #999);
-    font-family: Manrope;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter .container4 .sub-container-of-heading-text {
-    display: flex;
-    align-items: center;
-    align-self: stretch;
-    box-sizing: border-box;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter .container4 .sub-container-of-heading-text .heading3 {
-    flex: 1 0 0;
-    color: var(--Absolute-White, #fff);
-    font-family: Manrope;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter .container4 .sub-container-of-heading-text .sub-container6 {
-    display: flex;
-    padding: 6px;
-    align-items: center;
-    gap: 4px;
-    border-radius: 6px;
-    border: 1px solid var(--Black-15, #262626);
-    background: var(--Black-08, #141414);
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter .container4 .sub-container-of-heading-text .sub-container6 img {
-    width: 20px;
-    height: 20px;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter .container4 .sub-container-of-heading-text .sub-container6 .text2 {
-    color: var(--Grey-60, #999);
-    font-family: Manrope;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter .container-of-image {
-    display: flex;
-    width: 172px;
-    padding: 34px 72px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 12px;
-    border: 1px solid var(--Black-15, #262626);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(<path-to-image>) lightgray -12.667px 0px/114.729% 100% no-repeat;
-    background-image: url("../icons/chapter-1.png");
-    background-size: cover;
-    background-position: center;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter .container-of-image .button-icon2 {
-    display: flex;
-    padding: 10px;
-    align-items: flex-start;
-    gap: 10px;
-    border-radius: 67px;
-    background: rgba(0, 0, 0, 0.6);
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .sub-container-lists .episode-list .lists-chapter .container-of-image .button-icon2 img {
-    width: 30px;
-    height: 30px;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .container-season2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-self: stretch;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .container-season2 .button-icon-episodes5 {
-    display: flex;
-    padding: 12px;
-    align-items: center;
-    gap: 10px;
-    border-radius: 100px;
-    border: 1px solid var(--Black-15, #262626);
-    background: var(--Black-08, #141414);
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .container-season2 .button-icon-episodes5 img {
-    width: 20px;
-    height: 20px;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .container-season2 .sub-container-season2 {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .container-season2 .sub-container-season2 .heading-season2 {
-    color: var(--Absolute-White, #fff);
-    font-family: Manrope;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .sub-container-episodes15 .container-season2 .sub-container-season2 .text-episodes5 {
-    color: var(--Grey-60, #999);
-    font-family: Manrope;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .container-view-episodes {
-    box-sizing: border-box;
-    display: flex;
-    padding: 20px 40px;
-    justify-content: space-between;
-    align-items: center;
-    align-self: stretch;
-    border-radius: 10px;
-    border: 1px solid var(--Black-15, #262626);
-    background: var(--Black-06, #0f0f0f);
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .container-view-episodes .button-icon-episodes {
-    display: flex;
-    padding: 12px;
-    align-items: center;
-    gap: 10px;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .container-view-episodes .button-icon-episodes img {
-    width: 20px;
-    height: 20px;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .container-view-episodes .text-container-season-1 {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .container-view-episodes .text-container-season-1 .heading-season1 {
-    color: var(--Absolute-White, #fff);
-    font-family: Manrope;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-  }
-  .container-main-shows .container-reviews .container-main-left-seasons-episodes .sub-container-shows-left .container-view-episodes .text-container-season-1 .text-episodes {
-    color: var(--Grey-60, #999);
-    font-family: Manrope;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
   }
 }
 @media (max-width: 390px) {
