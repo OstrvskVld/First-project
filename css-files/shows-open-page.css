@@ -2477,43 +2477,50 @@ footer .container .sub-container .heading {
 }
 @media (max-width: 390px) {
   body {
-    width: 390px;
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-  }
-  .footer {
-    overflow: hidden;
-    width: 390px;
   }
   .header {
-    width: 390px;
-    box-sizing: border-box;
-  }
-  .burger {
-    display: block;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    z-index: 999;
-    left: 80%;
-  }
-  .navbar {
-    display: none !important;
-    overflow: hidden;
-  }
-  .logo {
-    width: 390px;
-    overflow-x: hidden;
-    display: flex !important;
+    display: flex;
     padding: 40px 16px 14px 16px;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
+  }
+  .header .burger-wrapper {
+    display: flex;
+    padding: 12px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 6px;
+    border: 3px solid var(--Black-15, #262626);
+    background: var(--Black-10, #1A1A1A);
+  }
+  .header .burger-wrapper .burger {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .header .burger-wrapper .burger-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .header .logo {
+    display: flex;
     width: 116.083px;
     justify-content: center;
     align-items: center;
     gap: 1.75px;
     flex-shrink: 0;
+  }
+  .navbar {
+    display: none !important;
+    overflow: hidden;
   }
   .burger:checked ~ .navbar {
     display: flex;
@@ -2529,6 +2536,9 @@ footer .container .sub-container .heading {
     align-items: center;
     height: auto;
     overflow: hidden;
+  }
+  .main-content section {
+    width: 360px;
   }
   .container-header-stranger {
     display: flex;
@@ -3031,95 +3041,91 @@ footer .container .sub-container .heading {
     gap: 8px;
     align-self: stretch;
   }
-  .cta-section {
-    display: flex;
-    width: 358px;
-    padding: 50px 30px;
+  .cta-container {
+    width: 360px;
+    height: 340px;
+  }
+  .cta-container .cta-background {
+    position: relative;
+    width: 360px;
+  }
+  .cta-container .cta-background .fade-out-left {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #0F0F0F 2.42%, rgba(20, 15, 15, 0.97) 25.46%, rgba(34, 14, 14, 0.91) 46.72%, rgba(229, 0, 0, 0) 168.98%);
+    bottom: 25px;
+  }
+  .cta-container .cta-background .image-container {
+    display: block;
+    align-items: flex-start;
+    gap: 0px !important;
+    width: 360px;
+    overflow: hidden;
+  }
+  .cta-container .cta-background .image-container img {
+    height: 100px;
+  }
+  .cta-content {
+    width: 360px;
+    height: 330px;
     flex-direction: column;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
-  .cta-section .cta-container {
+  .cta-content .text-container {
     display: flex;
-    width: 358px;
-    padding: 50px 30px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-  }
-  .cta-section .cta-container .primary-button {
-    display: flex;
-    padding: 14px 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: var(--Absolute-White, #fff);
-    font-family: Manrope;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-  }
-  .cta-section .cta-container .cta-content {
-    display: flex;
+    padding-bottom: 30px;
+    width: 300px;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    align-self: stretch;
+    gap: 14px;
   }
-  .cta-section .cta-container .cta-content .cta-title {
-    color: var(--Absolute-White, #fff);
+  .cta-content .text-container .cta-title {
+    color: var(--Absolute-White, #FFF);
     text-align: center;
     font-family: Manrope;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 150%;
+    text-align: center;
   }
-  .cta-section .cta-container .cta-content .cta-text {
+  .cta-content .text-container .cta-text {
     color: var(--Grey-60, #999);
     text-align: center;
     font-family: Manrope;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
+    text-align: center;
+  }
+  .primary-button {
+    display: flex;
+    padding: 18px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: var(--Red-45, #E50000);
+    color: var(--Absolute-White, #FFF);
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
     line-height: 150%;
-  }
-  .cta-section .cta-container .cta-background {
-    display: flex;
-    width: 1395px;
-    height: 693px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    position: absolute;
-    right: -519px;
-    top: -175px;
-  }
-  .cta-section .cta-container .cta-background .fade-out-left {
-    width: 1283px;
-    height: 646px;
-    position: absolute;
-    left: 56px;
-    top: 2px;
-  }
-  .cta-section .cta-container .cta-background .image-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    flex: 1 0 0;
-    align-self: stretch;
-    border: 2px solid red;
-  }
-  .cta-section .cta-container .cta-background .image-container img {
-    height: 100%;
   }
   .footer {
     display: flex;
     width: 390px;
-    padding: 50px 16px 20px 16px;
+    padding: 50px 0 20px 0;
     flex-direction: column;
     align-items: flex-start;
     gap: 50px;
@@ -3138,8 +3144,6 @@ footer .container .sub-container .heading {
     align-items: flex-start;
     gap: 16px;
     flex: 1 0 0;
-    justify-content: center;
-    align-items: center;
   }
   .footer .container .sub-container .buttons-container {
     display: flex;
@@ -3189,7 +3193,6 @@ footer .container .sub-container .heading {
     align-self: stretch;
   }
   .footer .container1 .line {
-    width: 358px;
     height: 1px;
   }
   .footer .container1 .container2 {
