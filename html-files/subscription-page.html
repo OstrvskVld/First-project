@@ -10,8 +10,12 @@
 
 <body>
     <header class="header">
-        <input type="checkbox" name="burger" id="burger" class="burger" />
+
         <img class="logo" src="../icons/logo-icon.svg" alt="StreamVibe" />
+        <label class="burger-wrapper">
+            <input type="checkbox" name="burger" id="burger" class="burger" />
+            <img class="burger-icon" src="../icons/burger_header.png" alt="Menu" />
+        </label>
         <nav class="navbar">
             <div class="nav-list">
                 <button class="home" type="submit">
@@ -54,7 +58,7 @@
                 </div>
 
                 <div class="pricing__toggle">
-                    <button class="pricing__toggle-btn-active">Monthly</button>
+                    <button class="pricing__toggle-btn active">Monthly</button>
                     <button class="pricing__toggle-btn">Yearly</button>
                 </div>
             </div>
@@ -301,26 +305,28 @@
                     <div class="image-container">
                         <img src="../icons/back-ground-img1.svg" alt="Background Image 1" />
                     </div>
-                    <div class="image-container2">
+                    <div class="image-container">
                         <img src="../icons/back-ground-img2.svg" alt="Background Image 2" />
                     </div>
-                    <div class="image-container3">
+                    <div class="image-container">
                         <img src="../icons/back-ground-img3.svg" alt="Background Image 3" />
                     </div>
-                    <div class="image-container4">
+                    <div class="image-container">
                         <img src="../icons/back-ground-img4.svg" alt="Background Image 4" />
                     </div>
 
                     <div class="fade-out-left"></div>
                 </div>
                 <article class="cta-content">
-                    <h2 class="cta-title">Start your free trial today!</h2>
-                    <p class="cta-text">
-                        This is a clear and concise call to action that encourages users
-                        to sign up for a free trial of StreamVibe.
-                    </p>
+                    <div class="text-container">
+                        <h2 class="cta-title">Start your free trial today!</h2>
+                        <p class="cta-text">
+                            This is a clear and concise call to action that encourages users
+                            to sign up for a free trial of StreamVibe.
+                        </p>
+                    </div>
+                    <button class="primary-button">Start a Free Trail</button>
                 </article>
-                <button class="primary-button">Start a Free Trail</button>
             </div>
         </section>
     </main>
@@ -356,12 +362,12 @@
                 </ul>
             </nav>
 
-            <section class="sub-container">
+            <nav class="sub-container">
                 <h2 class="heading">Support</h2>
                 <ul class="links-container">
                     <li><a href="#" class="text-button">Contact Us</a></li>
                 </ul>
-            </section>
+            </nav>
 
             <nav class="sub-container">
                 <h2 class="heading">Subscription</h2>
