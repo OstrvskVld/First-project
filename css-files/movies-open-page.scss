@@ -9,13 +9,40 @@ body {
 
     button {
         all: unset;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    button:hover {
+        transform: translateY(2px);
+        transform: scale(1.05);
+    }
+
+    img {
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    img:hover {
+        transform: translateY(2px);
+        transform: scale(1.05);
+    }
+
+    a {
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    a:hover {
+        transform: translateY(2px);
+        transform: scale(1.05);
     }
 
     figure {
         all: unset;
         // box-sizing: border-box;
     }
-    
+
 }
 
 .disabled {
@@ -47,14 +74,7 @@ body {
             border: 4px solid var(--Black-12, #1f1f1f);
             background: var(--Black-06, #0f0f0f);
 
-            .href-text {
-                color: var(--Grey-75, #bfbfbf);
-                font-family: Manrope;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 150%;
-            }
+
 
             .home {
                 display: flex;
@@ -72,8 +92,12 @@ body {
                     font-style: normal;
                     font-weight: 500;
                     line-height: 150%;
+                    padding: 0;
+                    margin: 0;
                 }
             }
+
+
 
             .list-item {
                 list-style: none;
@@ -2311,7 +2335,7 @@ footer {
 
     .container {
         display: flex;
-        
+
         justify-content: space-between;
         gap: 30px;
         align-self: stretch;
