@@ -7,8 +7,39 @@ body {
     margin: 0;
     padding: 0;
 
+    a {
+        text-decoration: none;
+    }
+
     button {
         all: unset;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    button:hover {
+        transform: translateY(2px);
+        transform: scale(1.05);
+    }
+
+    img {
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    img:hover {
+        transform: translateY(2px);
+        transform: scale(1.05);
+    }
+
+    a {
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    a:hover {
+        transform: translateY(2px);
+        transform: scale(1.05);
     }
 
     figure {
@@ -70,7 +101,15 @@ body {
                     font-style: normal;
                     font-weight: 500;
                     line-height: 150%;
+                    padding: 0;
+                    margin: 0;
                 }
+            }
+
+            .home:hover {
+                background-color: transparent;
+                color: #1A1A1A;
+                border-color: #9a0404;
             }
 
             .list-item {
@@ -103,6 +142,12 @@ body {
                     position: relative;
                     line-height: 150%;
                 }
+            }
+
+            .href-text:hover {
+                background-color: transparent;
+                color: #9a0404;
+                border-color: #9a0404;
             }
         }
 
@@ -255,6 +300,12 @@ body {
             line-height: 150%;
             padding: 0;
             margin: 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .heading-stranger:hover {
+            letter-spacing: 1px;
         }
     }
 }
@@ -689,11 +740,13 @@ body {
         .heading-cast {
             flex: 1 0 0;
             color: #999;
-            font-family: Archivo;
+            font-family: Manrope;
             font-size: 1.125rem;
             font-style: normal;
             font-weight: 500;
             line-height: 150%;
+            padding: 0;
+            margin: 0;
         }
     }
 }
@@ -822,10 +875,11 @@ body {
     align-items: center !important;
     gap: 10px;
 
-    .button-icon {
+    .button-icon-left {
         display: flex;
         align-items: center;
         gap: 0.625rem;
+        padding: 14px;
         border-radius: 100px !important;
         border: 1px solid var(--Black-15, #262626) !important;
         background: var(--Black-08, #141414) !important;
@@ -1508,16 +1562,16 @@ footer {
 
             .nav-list {
                 position: static;
-                width: 412px;
+
                 height: 61px;
                 padding: 8px 30px 8px 8px;
-                gap: 16px;
+
                 border-radius: 10px;
                 border: 3px solid var(--Black-12, #1f1f1f);
                 background: var(--Black-06, #0f0f0f);
 
                 .href-text {
-                    width: 104px;
+
                     height: 21px;
                     color: var(--Grey-75, #bfbfbf);
                     font-family: Manrope;
@@ -1528,11 +1582,11 @@ footer {
                 }
 
                 .home {
-                    width: 79px;
+
                     height: 45px;
                     border-radius: 8px;
                     display: flex;
-                    padding: 12px 20px;
+                    padding: 12px 16px;
                     align-items: center;
                     gap: 10px;
                     border: 1px solid var(--Black-10, #1a1a1a);
@@ -1545,7 +1599,7 @@ footer {
                         font-style: normal;
                         font-weight: 500;
                         line-height: 150%;
-                        width: 39px;
+
                         height: 21px;
                     }
                 }
@@ -2703,7 +2757,7 @@ footer {
                 justify-content: center;
                 gap: 10px;
 
-                .button-icon {
+                .button-icon-left {
                     display: flex;
                     padding: 12px;
                     align-items: center;
@@ -3656,6 +3710,7 @@ footer {
             row-gap: 70px;
             justify-content: center;
             align-items: center;
+            padding: 15px;
 
             .sub-container {
                 display: flex;
@@ -3672,11 +3727,16 @@ footer {
 
                     .button-icon {
                         display: flex;
-                        padding: 12px;
+                        padding: 0;
                         align-items: flex-start;
                         gap: 10px;
-                        width: 20px;
-                        height: 20px;
+                        width: 44px;
+                        height: 44px;
+
+                        img {
+                            width: 20px;
+                            height: 20px;
+                        }
                     }
                 }
 

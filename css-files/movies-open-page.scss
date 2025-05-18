@@ -7,6 +7,10 @@ body {
     margin: 0;
     padding: 0;
 
+    a {
+        text-decoration: none;
+    }
+
     button {
         all: unset;
         cursor: pointer;
@@ -97,38 +101,30 @@ body {
                 }
             }
 
+            .home:hover {
+                background-color: transparent;
+                color: #1A1A1A;
+                border-color: #9a0404;
+            }
 
 
-            .list-item {
-                list-style: none;
-                font-size: 1.125rem;
-                font-weight: 500;
-                color: #ffffff;
-                text-decoration: none;
-                padding: 0.625rem 1.25rem;
-                transition: background-color 0.3s ease, color 0.3s ease;
 
-                &:hover {
-                    background-color: #1f1f1f;
-                    color: #ffffff;
-                }
 
-                a {
-                    position: relative;
-                    line-height: 150%;
-                    font-weight: 500;
-                    border-radius: 8px;
-                    background-color: #1a1a1a;
-                    border: 1px solid #1a1a1a;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: flex-start;
-                    padding: 0.875rem 1.5rem;
-                    color: #fff;
-                    position: relative;
-                    line-height: 150%;
-                }
+
+            .href-text {
+                color: var(--Grey-75, #BFBFBF);
+                font-family: Manrope;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+
+            }
+
+            .href-text:hover {
+                background-color: transparent;
+                color: #9a0404;
+                border-color: #9a0404;
             }
         }
 
@@ -274,7 +270,14 @@ body {
         line-height: 150%;
         padding: 0;
         margin: 0;
+        cursor: pointer;
+        transition: all 0.3s ease;
     }
+
+    .heading-header:hover {
+        letter-spacing: 1px;
+    }
+
 
     .paragraph-header {
         align-self: stretch;
@@ -1301,16 +1304,16 @@ footer {
 
             .nav-list {
                 position: static;
-                width: 412px;
+
                 height: 61px;
                 padding: 8px 30px 8px 8px;
-                gap: 16px;
+
                 border-radius: 10px;
                 border: 3px solid var(--Black-12, #1f1f1f);
                 background: var(--Black-06, #0f0f0f);
 
                 .href-text {
-                    width: 104px;
+
                     height: 21px;
                     color: var(--Grey-75, #bfbfbf);
                     font-family: Manrope;
@@ -1321,11 +1324,11 @@ footer {
                 }
 
                 .home {
-                    width: 79px;
+
                     height: 45px;
                     border-radius: 8px;
                     display: flex;
-                    padding: 12px 20px;
+                    padding: 12px 16px;
                     align-items: center;
                     gap: 10px;
                     border: 1px solid var(--Black-10, #1a1a1a);
@@ -1338,7 +1341,7 @@ footer {
                         font-style: normal;
                         font-weight: 500;
                         line-height: 150%;
-                        width: 39px;
+
                         height: 21px;
                     }
                 }
@@ -2970,6 +2973,7 @@ footer {
             row-gap: 70px;
             justify-content: center;
             align-items: center;
+            padding: 15px;
 
             .sub-container {
                 display: flex;
@@ -2986,11 +2990,16 @@ footer {
 
                     .button-icon {
                         display: flex;
-                        padding: 12px;
+                        padding: 0;
                         align-items: flex-start;
                         gap: 10px;
-                        width: 20px;
-                        height: 20px;
+                        width: 44px;
+                        height: 44px;
+
+                        img {
+                            width: 20px;
+                            height: 20px;
+                        }
                     }
                 }
 

@@ -6,6 +6,9 @@ body {
   margin: 0;
   padding: 0;
 }
+body a {
+  text-decoration: none;
+}
 body button {
   all: unset;
   cursor: pointer;
@@ -81,34 +84,23 @@ body figure {
   padding: 0;
   margin: 0;
 }
-.header .navbar .nav-list .list-item {
-  list-style: none;
-  font-size: 1.125rem;
-  font-weight: 500;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 0.625rem 1.25rem;
-  transition: background-color 0.3s ease, color 0.3s ease;
+.header .navbar .nav-list .home:hover {
+  background-color: transparent;
+  color: #1A1A1A;
+  border-color: #9a0404;
 }
-.header .navbar .nav-list .list-item:hover {
-  background-color: #1f1f1f;
-  color: #ffffff;
+.header .navbar .nav-list .href-text {
+  color: var(--Grey-75, #BFBFBF);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 }
-.header .navbar .nav-list .list-item a {
-  position: relative;
-  line-height: 150%;
-  font-weight: 500;
-  border-radius: 8px;
-  background-color: #1a1a1a;
-  border: 1px solid #1a1a1a;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0.875rem 1.5rem;
-  color: #fff;
-  position: relative;
-  line-height: 150%;
+.header .navbar .nav-list .href-text:hover {
+  background-color: transparent;
+  color: #9a0404;
+  border-color: #9a0404;
 }
 .header .navbar .buttons-container {
   display: flex;
@@ -234,6 +226,11 @@ body figure {
   line-height: 150%;
   padding: 0;
   margin: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.container-Kantara .heading-header:hover {
+  letter-spacing: 1px;
 }
 .container-Kantara .paragraph-header {
   align-self: stretch;
@@ -1145,16 +1142,13 @@ footer .container .sub-container .heading {
   }
   .header .navbar .nav-list {
     position: static;
-    width: 412px;
     height: 61px;
     padding: 8px 30px 8px 8px;
-    gap: 16px;
     border-radius: 10px;
     border: 3px solid var(--Black-12, #1f1f1f);
     background: var(--Black-06, #0f0f0f);
   }
   .header .navbar .nav-list .href-text {
-    width: 104px;
     height: 21px;
     color: var(--Grey-75, #bfbfbf);
     font-family: Manrope;
@@ -1164,11 +1158,10 @@ footer .container .sub-container .heading {
     line-height: 150%;
   }
   .header .navbar .nav-list .home {
-    width: 79px;
     height: 45px;
     border-radius: 8px;
     display: flex;
-    padding: 12px 20px;
+    padding: 12px 16px;
     align-items: center;
     gap: 10px;
     border: 1px solid var(--Black-10, #1a1a1a);
@@ -1181,7 +1174,6 @@ footer .container .sub-container .heading {
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
-    width: 39px;
     height: 21px;
   }
   .header .navbar .buttons-container {
@@ -2533,6 +2525,7 @@ footer .container .sub-container .heading {
     row-gap: 70px;
     justify-content: center;
     align-items: center;
+    padding: 15px;
   }
   .footer .container .sub-container {
     display: flex;
@@ -2548,9 +2541,13 @@ footer .container .sub-container .heading {
   }
   .footer .container .sub-container .buttons-container .button-icon {
     display: flex;
-    padding: 12px;
+    padding: 0;
     align-items: flex-start;
     gap: 10px;
+    width: 44px;
+    height: 44px;
+  }
+  .footer .container .sub-container .buttons-container .button-icon img {
     width: 20px;
     height: 20px;
   }

@@ -110,6 +110,12 @@ body {
                 }
             }
 
+            .home:hover {
+                background-color: transparent;
+                color: #1A1A1A;
+                border-color: #9a0404;
+            }
+
             .list-item {
                 list-style: none;
                 font-size: 1.125rem;
