@@ -8,6 +8,28 @@ body {
 }
 body button {
   all: unset;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+body button:hover {
+  transform: translateY(2px);
+  transform: scale(1.05);
+}
+body img {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+body img:hover {
+  transform: translateY(2px);
+  transform: scale(1.05);
+}
+body a {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+body a:hover {
+  transform: translateY(2px);
+  transform: scale(1.05);
 }
 
 .disabled {
@@ -24,6 +46,14 @@ body button {
   margin-bottom: 50px;
   justify-content: space-between;
   align-items: center;
+}
+.header img {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.header img:hover {
+  transform: translateY(2px);
+  transform: scale(1.05);
 }
 .header .navbar .nav-list {
   display: flex;
@@ -61,6 +91,13 @@ body button {
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
+  padding: 0;
+  margin: 0;
+}
+.header .navbar .nav-list .home:hover {
+  background-color: transparent;
+  color: #1A1A1A;
+  border-color: #9a0404;
 }
 .header .navbar .nav-list .list-item {
   list-style: none;
@@ -91,6 +128,11 @@ body button {
   position: relative;
   line-height: 150%;
 }
+.header .navbar .nav-list .href-text:hover {
+  background-color: transparent;
+  color: #9a0404;
+  border-color: #9a0404;
+}
 .header .navbar .buttons-container {
   display: flex;
   align-items: center;
@@ -107,6 +149,12 @@ body button {
   align-items: center;
   gap: 3px;
   flex-shrink: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.header .logo:hover {
+  transform: translateY(2px);
+  transform: scale(1.05);
 }
 .header .search-notification {
   display: flex;
@@ -177,6 +225,24 @@ body button {
   left: calc(50% - 235px);
   height: 29.375rem;
   z-index: 7;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.abstract-design-container .film-image-abstract {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.abstract-design-container:hover {
+  transform: translateY(2px);
+}
+
+.film-image-abstract:hover {
+  transform: scale(1.05);
 }
 
 .film-image {
@@ -243,6 +309,11 @@ body button {
   line-height: 150%;
   padding: 0;
   margin: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.sub-container .streaming-promo__content .streaming-promo__heading:hover {
+  letter-spacing: 1px;
 }
 .sub-container .streaming-promo__content .streaming-promo__description {
   color: var(--Grey-60, #999);
@@ -1109,7 +1180,6 @@ footer .container .sub-container .heading {
   .header .navbar .nav-list {
     position: static;
     width: 412px;
-    height: 61px;
     padding: 8px 30px 8px 8px;
     gap: 16px;
     border-radius: 10px;
@@ -1128,7 +1198,6 @@ footer .container .sub-container .heading {
   }
   .header .navbar .nav-list .home {
     width: 79px;
-    height: 45px;
     border-radius: 8px;
     display: flex;
     padding: 12px 20px;
@@ -2182,9 +2251,10 @@ footer .container .sub-container .heading {
     align-items: center;
     gap: 30px;
     align-self: stretch;
-    padding-left: 30px;
+    padding: 0;
     margin: 0;
     bottom: 70px;
+    width: 390px;
   }
   .streaming-promo .sub-container .streaming-promo__content {
     display: flex;
@@ -2813,6 +2883,7 @@ footer .container .sub-container .heading {
     row-gap: 70px;
     justify-content: center;
     align-items: center;
+    padding: 15px;
   }
   .footer .container .sub-container {
     display: flex;
@@ -2828,9 +2899,13 @@ footer .container .sub-container .heading {
   }
   .footer .container .sub-container .buttons-container .button-icon {
     display: flex;
-    padding: 12px;
+    padding: 0;
     align-items: flex-start;
     gap: 10px;
+    width: 44px;
+    height: 44px;
+  }
+  .footer .container .sub-container .buttons-container .button-icon img {
     width: 20px;
     height: 20px;
   }
